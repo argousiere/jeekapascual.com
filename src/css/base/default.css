@@ -1,0 +1,66 @@
+body {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  font-size: clamp(
+    1rem,
+    0.8392857142857143rem + 0.4464285714285714vw,
+    1.375rem
+  );
+  line-height: 1.6;
+  font-family: var(--font-secondary);
+  background: var(--body-bg-color);
+  letter-spacing: 1px;
+}
+
+body {
+  position: relative;
+  color: var(--body-text-color);
+  background-image: 
+    radial-gradient(rgba(6, 112, 152, 0.1) 29%, rgba(10, 24, 52, 0.1) 100%), 
+    radial-gradient(rgb(2, 16, 25) 71%, rgb(7, 8, 9) 100%);
+}
+
+body::before,
+body::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+body::before {
+  --dot-grid-offset: calc(var(--grid-size) * -2 - (var(--grid-dot-size) / 2));
+
+  mix-blend-mode: overlay;
+  background-image: 
+    repeating-linear-gradient(to right, 
+      transparent 0 var(--grid-size), 
+      var(--grid-line-color-tertiary) calc(var(--grid-size) - var(--grid-line-width)) calc(var(--grid-size) + var(--grid-line-width)), 
+      transparent calc(var(--grid-size) + var(--grid-line-width)) calc(var(--grid-size) * 2)),
+    repeating-linear-gradient(to bottom, 
+      transparent 0 var(--grid-size), 
+      var(--grid-line-color-tertiary) calc(var(--grid-size) - var(--grid-line-width)) calc(var(--grid-size) + var(--grid-line-width)), 
+      transparent calc(var(--grid-size) + var(--grid-line-width)) calc(var(--grid-size) * 2)),
+      repeating-linear-gradient(to right, var(--grid-line-color) 0, var(--grid-line-color) var(--grid-line-width), transparent calc(var(--grid-line-width) + 1px), transparent var(--grid-size)),
+    repeating-linear-gradient(to bottom, 
+      var(--grid-line-color) 0 var(--grid-line-width), 
+      transparent var(--grid-line-width) var(--grid-size)),
+    repeating-linear-gradient(to bottom, 
+      var(--grid-line-color-secondary) 0 var(--grid-line-width), 
+      transparent var(--grid-line-width) 4px)
+    ;
+}
+
+body::after {
+  background-image: 
+    radial-gradient(
+        var(--grid-dot-color) 0 calc(var(--grid-dot-size)/2), 
+        transparent calc(var(--grid-dot-size)/2) var(--grid-dot-size));
+  background-size: 
+    calc(var(--grid-size) * 2) calc(var(--grid-size) * 2);
+  background-position: 
+    var(--dot-grid-offset) var(--dot-grid-offset)
+}

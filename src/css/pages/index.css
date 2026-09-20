@@ -1,0 +1,43 @@
+.home-template article {
+  --border-clip-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: clamp(3rem, 3rem + 2vw, 5rem);
+  padding: 1em;
+  background: rgb(2 10 15 / 33%);
+  backdrop-filter: blur(3px);
+  border-radius: 8px;
+  border: 1px solid #0e3d50;
+}
+
+@media (min-width: 576px) {
+  .home-template article {
+    flex-wrap: initial;
+  }
+}
+
+.home-template article h2 {
+  margin: 0;
+  font-size: 24px;
+  padding: 0.2em 1em;
+}
+
+.home-template article p:not(:last-child) {
+  margin-bottom: 1rem;
+  font-size: var(--small);
+}
+
+.home-template article img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (min-width: 786px) {
+  .home-template article img {
+    width: 300px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --font-primary: 'Exo', sans-serif;
+  --font-secondary: 'Nunito Sans', sans-serif;
+  --h1: 2rem;
+  --h2: 1.7411rem;
+  --h3: 1.5157rem;
+  --h4: 1.3195rem;
+  --h5: 1.1487rem;
+  --h6: 1rem;
+  --small: 0.8706rem;
+
+  --gap: 1rem;
+
+  --body-bg-color: rgb(11 23 34);
+  --body-text-color: #ffffff;
+
+  --grid-line-color: #88a6b4;
+  --grid-line-color-secondary: #6e93a3;
+  --grid-line-color-tertiary: #8fb99c;
+  --grid-line-width: 1px;
+  --grid-dot-color: #305c59;
+  --grid-dot-size: 2px;
+  --grid-size: 48px;
+
+  --ves-border-color: rgb(37 87 126);
+}
+
+@media (min-width: 576px) {
+  :root {
+    --gap: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --gap: 3rem;
+  }
+}

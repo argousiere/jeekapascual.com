@@ -1,0 +1,60 @@
+nav,
+footer {
+  padding: 1rem 0;
+}
+nav ul,
+footer ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  font-size: var(--small);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a {
+  --border-clip-size: 15px;
+  --border-width: 1px;
+  --button-bg: linear-gradient(45deg, rgb(37 87 126 / 20%), rgb(37 87 126 / 50%));
+  display: block;
+  border-style: solid;
+  border-color: var(--ves-border-color);
+  border-width: var(--border-width) var(--border-width) 0 0;
+  padding: 0.5em 1.5em;
+  width: 200px;
+  text-transform: uppercase;
+  font-family: var(--font-primary);
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  position: relative;
+  clip-path: polygon(0 0,calc(100% - var(--border-clip-size)) 0,100% var(--border-clip-size),100% 100%,0 100%);
+  background: linear-gradient(-135deg, var(--ves-border-color) calc(0.707*var(--border-clip-size) + var(--border-width)),#0000 0) border-box;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--button-bg);
+    z-index: -1;
+  }
+
+  &:hover {
+    --ves-border-color: rgb(34, 106, 162);
+    --button-bg: linear-gradient(45deg, rgba(33, 94, 140, 40%), rgba(30, 93, 141, 70%));
+  }
+}
+
+nav .nav-current a {
+  --ves-border-color: rgb(15 167 182);
+  --button-bg: linear-gradient(45deg, rgb(27 162 176 / 20%), rgb(15 167 182 / 50%));
+
+  &:hover {
+    --ves-border-color: rgb(13, 190, 206);
+    --button-bg: linear-gradient(45deg, rgb(27 162 176 / 40%), rgb(15 167 182 / 70%));
+  }
+}

@@ -1,0 +1,39 @@
+/* These styles define the layout of the post (and page) */
+
+.post {
+  margin-block-end: 3rem;
+}
+
+.post__information,
+.post__metadata {
+  border-style: solid;
+  border-color: #294f58;
+}
+
+.post__information {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  border-width: 1px 0;
+}
+
+.post__metadata {
+  border-width: 0;
+  padding: 0.5em 2em;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+.post__metadata:not(:last-child) {
+  border-right-width: 1px;
+}
+
+.post__information + .post__body {
+  margin-top: 1em;
+}
+
+.post__body {
+  padding: 1em;
+  }
