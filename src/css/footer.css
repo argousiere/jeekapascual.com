@@ -1,0 +1,15 @@
+.app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--ves-spacing-10);
+  font-family: var(--ves-font-family-primary);
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.app-footer__copy {
+  margin: 0;
+  color: var(--foreground-color);
+  font-size: var(--ves-font-size-lg);
+}
