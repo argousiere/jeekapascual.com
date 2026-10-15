@@ -8,7 +8,7 @@
     "add-content": "vespertina add-content"
   },
   "dependencies": {
-    "@argousiere/vespertina-design-system": "file:../vespertina-design-system",
+    "@argousiere/vespertina-design-system": "^0.1.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
