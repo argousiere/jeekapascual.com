@@ -1,5 +1,8 @@
-import { Navbar } from '@argousiere/vespertina-design-system/react';
+import { EntryList, Navbar } from '@argousiere/vespertina-design-system/react';
 import Footer from './components/Footer';
+import { getEntryListItems } from './entries';
+
+const entryListItems = getEntryListItems();
 
 const App = () => (
   <div className="site">
@@ -13,6 +16,7 @@ const App = () => (
           aria-label="Vespertina logo"
         />
       </section>
+      <EntryList title="Entries" items={entryListItems} />
     </main>
     <Footer />
   </div>

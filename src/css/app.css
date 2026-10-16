@@ -32,3 +32,9 @@ html {
   letter-spacing: 0.05em;
   text-align: center;
 }
+
+.app__main .ves-entry-list {
+  width: 100%;
+  max-width: 48rem;
+  margin: var(--ves-spacing-9) auto 0;
+}
