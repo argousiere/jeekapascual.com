@@ -9,3 +9,9 @@ export const getPosts = async () =>
 
 export const getReadingTime = (body = '') =>
   Math.max(1, Math.ceil(body.trim().split(/\s+/).length / WORDS_PER_MINUTE));
+
+export const getTagSlugs = async () => {
+  const posts = await getPosts();
+
+  return [...new Set(posts.flatMap(({ data }) => data.tags))].sort();
+};
