@@ -2,7 +2,7 @@
 title: "Sonnet XV: Oil Painting"
 date: 2008-09-29
 tags: ["poetry", "sonnet"]
-excerpt: "A variation of Sonnet XIV, but with an oil painting metaphor."
+description: "A variation of Sonnet XIV, but with an oil painting metaphor."
 ---
 
 The storm clouds part to let your radiance through  

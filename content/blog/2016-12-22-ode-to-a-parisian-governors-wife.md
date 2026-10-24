@@ -2,7 +2,7 @@
 title: "Ode to a Parisian Governor's Wife"
 date: 2016-12-22
 tags: ["expat", "paris"]
-excerpt: "Spending a night at an old Parisian governor's house"
+description: "Spending a night at an old Parisian governor's house"
 ---
 
 *This is a retelling of a rare experience I had, spending a night at an old Parisian governor's house, a few days before Christmas. The governor has long passed away, with only his old, bedridden wife left to preserve life in the apartment. Some caretakers looked after the old lady during the day, and a few people were often invited to stay over for the evening to keep her company. Different batches each time, but there had to be someone in the house to be with her. A friend offered us to stay for one night before we headed our way to Normandy for the Christmas holidays.*

@@ -2,7 +2,7 @@
 title: "Physallis"
 date: 2019-12-03
 tags: ["artwork", "botanical-illustration"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/02/Physalis_JeanellaPascual.jpg"
 ---
 

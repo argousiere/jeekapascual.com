@@ -2,7 +2,7 @@
 title: "The Bubbling Brook at Berthelot"
 date: 2016-08-11
 tags: ["nature", "expat"]
-excerpt: "An ode to the little park beside my office"
+description: "An ode to the little park beside my office"
 ---
 
 I'm currently seated on a bench in the park beside my office. I go here once in a while to unload my thoughts during lunch break. It's just a simple park: nothing too pretentious about a few benches and unmanicured patches of grass. On top of these, *\*la Tiretaine\**, the regional river cuts through it, so I get to hear the soothing sounds of rushing water. A small bridge hangs over it, adding to the quaint charm of the place, even though I rarely see people pass through it.

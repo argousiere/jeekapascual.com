@@ -2,7 +2,7 @@
 title: "Autumn's Arrival"
 date: 2015-10-21
 tags: ["expat", "france"]
-excerpt: "When I was a child, I always dreamed of experiencing Autumn."
+description: "When I was a child, I always dreamed of experiencing Autumn."
 ---
 
 No other season marks the arrival of a new chapter quite as symbolically as that of Autumn.

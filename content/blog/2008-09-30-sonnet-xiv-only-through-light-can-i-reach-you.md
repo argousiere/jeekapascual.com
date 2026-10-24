@@ -2,7 +2,7 @@
 title: "Sonnet XIV: Only Through Light Can I Reach You"
 date: 2008-09-30
 tags: ["poetry", "sonnet"]
-excerpt: "A space-themed sonnet about unrequited love"
+description: "A space-themed sonnet about unrequited love"
 ---
 
 Two sheer spheres of twilight-blue moonstones bless'd  

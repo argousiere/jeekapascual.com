@@ -2,7 +2,7 @@
 title: "Sonnet VI: Cold Confinement"
 date: 2007-11-25
 tags: ["poetry", "sonnet"]
-excerpt: "Imagery of a solitary person and an old cabin in a snow-covered forest"
+description: "Imagery of a solitary person and an old cabin in a snow-covered forest"
 ---
 
 The winter sphere carpets the ground outside  

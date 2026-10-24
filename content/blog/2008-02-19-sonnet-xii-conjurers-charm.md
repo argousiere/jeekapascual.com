@@ -2,7 +2,7 @@
 title: "Sonnet XII: Conjurer's Charm"
 date: 2008-02-19
 tags: ["poetry", "sonnet"]
-excerpt: "I wrote a sonnet about disingenuous politicians for an assignment during my Senior Year."
+description: "I wrote a sonnet about disingenuous politicians for an assignment during my Senior Year."
 ---
 
 Rise forth, oh idea of the ancients  

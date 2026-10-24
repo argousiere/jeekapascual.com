@@ -1,15 +1,10 @@
 ---
 import { EntryList } from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getPosts } from '../utils/posts';
+import { getPosts, toEntryModel } from '../utils/posts';
 
 const posts = await getPosts();
-const items = posts.map(({ id, data }) => ({
-  id,
-  title: data.title,
-  date: data.date,
-  url: `/${id}/`,
-}));
+const items = posts.map((post) => ({ entry: toEntryModel(post) }));
 ---
 
 <BaseLayout>
@@ -18,6 +13,6 @@ const items = posts.map(({ id, data }) => ({
     <div class="ves-logo" role="img" aria-label="Vespertina logo"></div>
   </section>
 
-  <EntryList title="Latest Posts" items={items} />
+  <EntryList entryListTitle="Latest Posts" items={items} />
   
 </BaseLayout>

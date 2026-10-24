@@ -1,0 +1,14 @@
+.app-entry-page {
+  width: 100%;
+
+  .ves-entry__header,
+  .ves-entry__body,
+  .ves-entry__tags {
+    max-width: 720px;
+  }
+}
+
+.app-entry-page__pagination {
+  width: 100%;
+  margin: var(--ves-spacing-9) auto 0;
+}

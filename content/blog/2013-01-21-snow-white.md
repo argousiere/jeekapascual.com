@@ -2,7 +2,7 @@
 title: "Snow White"
 date: 2013-01-21
 tags: ["prose", "nature", "reflection"]
-excerpt: "A writing exercise on Snow White-esque themes of uncertainty and waiting out the snow storm."
+description: "A writing exercise on Snow White-esque themes of uncertainty and waiting out the snow storm."
 ---
 
 It stifles me how everything around us is shrouded with uncertainty. It stifles me, this shroud of uncertainty. I am lost and in need of a compass to lead me to the most secure path. But even a compass won't ensure I will make it safely to my destination. Or if I will ever make it all.

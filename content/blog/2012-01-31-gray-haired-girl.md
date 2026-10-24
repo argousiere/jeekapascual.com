@@ -2,7 +2,7 @@
 title: "Gray-Haired Girl"
 date: 2012-01-31
 tags: ["artwork", "digital-art"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/02/test.png"
 ---
 

@@ -2,7 +2,7 @@
 title: "Sonnet XI: The Map of Constellations"
 date: 2008-02-07
 tags: ["poetry", "sonnet"]
-excerpt: "A sonnet about seeking wisdom from the night sky"
+description: "A sonnet about seeking wisdom from the night sky"
 ---
 
 Footsteps trodded upon footsteps and spells  

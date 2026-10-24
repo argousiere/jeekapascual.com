@@ -2,7 +2,7 @@
 title: "Sonnet III: The Ghost of Whimsical Fascination"
 date: 2007-02-01
 tags: ["poetry", "sonnet"]
-excerpt: "A tribute to all the unknown writers in the past millennia"
+description: "A tribute to all the unknown writers in the past millennia"
 ---
 
 Oh quill of minds, doth twirleth for me  

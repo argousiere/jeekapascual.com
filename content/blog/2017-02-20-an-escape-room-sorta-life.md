@@ -2,7 +2,7 @@
 title: "An Escape Room Sorta Life"
 date: 2017-02-20
 tags: ["reflection"]
-excerpt: ""
+description: ""
 ---
 
 After a few months of running around non-stop, I ended up hitting a wall.

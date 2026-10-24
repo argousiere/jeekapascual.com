@@ -2,7 +2,7 @@
 title: "Sonnet VII: Love's Monument Stands"
 date: 2007-12-10
 tags: ["poetry", "sonnet"]
-excerpt: "One of my favorite sonnets"
+description: "One of my favorite sonnets"
 ---
 
 Swiftly does the breeze shape stone slabs and hills  

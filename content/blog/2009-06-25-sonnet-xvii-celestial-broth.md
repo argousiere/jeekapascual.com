@@ -2,7 +2,7 @@
 title: "Sonnet XVII: Celestial Broth"
 date: 2009-06-25
 tags: []
-excerpt: "Continuation of Sonnet XVI. Orbital gravity as a metaphor for unrequited love."
+description: "Continuation of Sonnet XVI. Orbital gravity as a metaphor for unrequited love."
 ---
 
 To be concealed within your stellar mind  

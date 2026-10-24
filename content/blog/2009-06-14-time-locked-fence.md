@@ -2,7 +2,7 @@
 title: "Time-locked Fence"
 date: 2009-06-14
 tags: ["artwork", "digital-art"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/02/time_locked_fence_by_mistyglow-d230efn.jpg"
 ---
 

@@ -2,7 +2,7 @@
 title: "Space Mechanic"
 date: 2023-08-08
 tags: ["artwork"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/01/987D3266-8D42-4A38-A7E8-AF4050387B8C.jpeg"
 ---
 

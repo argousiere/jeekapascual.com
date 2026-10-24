@@ -2,7 +2,7 @@
 title: "Dear Kalsangi"
 date: 2012-12-30
 tags: ["nostalgia"]
-excerpt: "I just graduated from university and I found myself in my room back home leafing through old journals from childhood."
+description: "I just graduated from university and I found myself in my room back home leafing through old journals from childhood."
 ---
 
 The whole diary thing feels new, despite having encountered this several times; it's like I'm feeling my way through the dark. Yes, lately, it has been dark.

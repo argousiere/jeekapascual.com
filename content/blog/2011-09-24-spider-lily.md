@@ -2,7 +2,7 @@
 title: "Spider Lily"
 date: 2011-09-24
 tags: ["digital-art", "artwork"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/02/Spider-Lily-Cropped.png"
 ---
 

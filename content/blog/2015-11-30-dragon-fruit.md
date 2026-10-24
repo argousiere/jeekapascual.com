@@ -2,7 +2,7 @@
 title: "Dragon Fruit"
 date: 2015-11-30
 tags: ["artwork", "botanical-illustration", "watercolors"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/02/Dragonfruit.jpg"
 ---
 

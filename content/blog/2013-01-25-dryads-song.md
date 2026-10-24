@@ -2,7 +2,7 @@
 title: "Dryad's Song"
 date: 2013-01-25
 tags: ["prose", "nature", "fantasy"]
-excerpt: "A short story of a dryad waking up from a deep slumber and encountering a lost hunter."
+description: "A short story of a dryad waking up from a deep slumber and encountering a lost hunter."
 ---
 
 A few weeks into midsummer, I recalled you stumbling upon my nest, several miles deep into the forest Nelephaeium. This was considered a sanctuary, filled with exotic plants, and berries sought after their healing properties. However, access to these rare ingredients was considered a luxury and only left to the brave, because it took days to reach its fringes, and the wildlife that roam about it were hostile. The residing creatures fended off outsiders that might pose harm to the forest, which the forest rewarded by providing food and shelter. No one would like to come across a savage creature alone, so bands of merchants usually trekked with a cavalcade of guildsmen. The vast forest spanned three-quarters South up until the Northwestern regions of the mystical Mount Vasana, with no part of the forest claimed by the nearby kingdoms. I have been a part of this sanctuary for decades, but I spent a great length of it in slumber, remembering only brief episodes of waking up to uproars of warriors and beasts, and days where I would sometimes feel a form of growth along my appendages and crown.

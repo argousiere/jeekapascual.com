@@ -2,7 +2,7 @@
 title: "Blog Revival of 2023"
 date: 2023-12-09
 tags: []
-excerpt: ""
+description: ""
 ---
 
 After a hundred midnights drafting the [design in Figma](https://www.figma.com/file/jiNUbgAPy50E6CpPQEvW16/Vespertine-Cadet?type=design&node-id=377%3A24&mode=design&t=V6BMl7sCh1oCvDdo-1) and coding up the theme, I'm happy to finally have this site up and running again! On top of a full-time job and day-to-day responsibilities, I managed to put together something decent. It's still a work in progress and parts are bound to move, so don't worry if you see some bugs!

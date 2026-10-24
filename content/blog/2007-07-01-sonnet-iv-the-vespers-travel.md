@@ -2,7 +2,7 @@
 title: "Sonnet IV: The Vesper's Travel"
 date: 2007-07-01
 tags: ["poetry", "sonnet"]
-excerpt: "Cheesy teenage writing. I'm only leaving this here because of nostalgia."
+description: "Cheesy teenage writing. I'm only leaving this here because of nostalgia."
 ---
 
 There lies in me a nullness of the night  

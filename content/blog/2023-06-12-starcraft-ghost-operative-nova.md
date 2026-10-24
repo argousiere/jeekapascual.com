@@ -2,7 +2,7 @@
 title: "Starcraft Ghost Operative Nova"
 date: 2023-06-12
 tags: ["artwork"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/01/IMG_0036.jpeg"
 ---
 

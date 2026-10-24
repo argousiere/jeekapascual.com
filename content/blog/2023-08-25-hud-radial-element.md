@@ -2,7 +2,7 @@
 title: "HUD Radial Element"
 date: 2023-08-25
 tags: ["artwork"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/01/HUD-Radial-Element.svg"
 ---
 

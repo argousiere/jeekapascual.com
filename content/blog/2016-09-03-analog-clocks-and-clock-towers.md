@@ -2,7 +2,7 @@
 title: "Analog Clocks and Clock Towers"
 date: 2016-09-03
 tags: ["musings"]
-excerpt: "Musings on these wonderful pieces of machinery"
+description: "Musings on these wonderful pieces of machinery"
 ---
 
 I've always had a fascination for symbolisms of time, such as analog clocks, pocket watches, hourglasses, and clock towers.

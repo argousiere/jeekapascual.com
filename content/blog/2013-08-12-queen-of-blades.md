@@ -2,7 +2,7 @@
 title: "Queen of Blades"
 date: 2013-08-12
 tags: ["artwork", "digital-art"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/02/Queen-of-Blades-lineart.jpeg"
 ---
 

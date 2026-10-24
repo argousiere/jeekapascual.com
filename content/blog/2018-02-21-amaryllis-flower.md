@@ -2,7 +2,7 @@
 title: "Amaryllis Flower"
 date: 2018-02-21
 tags: ["artwork", "botanical-illustration"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/02/Amaryllis-small.jpg"
 ---
 

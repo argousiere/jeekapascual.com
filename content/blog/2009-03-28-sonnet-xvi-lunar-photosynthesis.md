@@ -2,7 +2,7 @@
 title: "Sonnet XVI: Lunar Photosynthesis"
 date: 2009-03-28
 tags: ["poetry", "sonnet"]
-excerpt: "Continuation of Sonnet XIV. Building a botanical bridge to reach the moon."
+description: "Continuation of Sonnet XIV. Building a botanical bridge to reach the moon."
 ---
 
 Shooting stars skin to glitter dust, fall  

@@ -2,7 +2,7 @@
 title: "Rivers of Transition"
 date: 2012-12-31
 tags: ["reflection", "adulthood"]
-excerpt: "A reflection on adulthood after finishing my undergraduate studies."
+description: "A reflection on adulthood after finishing my undergraduate studies."
 ---
 
 The turning over of a new year did not have to wait any longer. It's as if the fluorescent carpet has absorbed back the colors of a vibrant season and the air is busy with people running around, scrambling after work left over from the holidays. No time to let any of it sink in, to let the Christmas wine swish around the tongue one last time, in the hopes of that significant flavor magically resurfacing from under the bitterness.

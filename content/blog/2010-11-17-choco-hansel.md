@@ -2,7 +2,7 @@
 title: "Choco Hansel"
 date: 2010-11-17
 tags: ["artwork", "digital-art"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/02/2010-11-21-Hansel-Candy-ID.jpg"
 ---
 

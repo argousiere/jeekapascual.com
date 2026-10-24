@@ -2,7 +2,7 @@
 title: "The Importance of Quiescence"
 date: 2016-11-22
 tags: ["introvert", "ramblings"]
-excerpt: "Answering the call of the sofa and the teapot"
+description: "Answering the call of the sofa and the teapot"
 ---
 
 I am an introvert, and I'm fully-aware of the *\*necessity\** of time to recharge. No other person, except for an introvert, can fully understand the appeal of an empty house and a weekend of no socialization. White space, white noise. Yet the significance is truly underlined during moments when outer stimulants are blaring at their maximum levels, and one could observe the poor introvert staring blankly into the void, punctuating the cacophony with long, drawn-out sighs.

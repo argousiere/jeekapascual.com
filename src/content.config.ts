@@ -13,9 +13,11 @@ const blog = defineCollection({
   }),
   schema: z.object({
     title: z.string(),
-    date: z.coerce.date(),
+    date: z.coerce
+      .date()
+      .transform((date) => date.toISOString().slice(0, 10)),
     tags: z.array(z.string()).default([]),
-    excerpt: z.string().optional(),
+    description: z.string().optional(),
   }),
 });
 

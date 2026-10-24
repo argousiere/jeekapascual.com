@@ -4,7 +4,7 @@ import {
   EntryPagination,
 } from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getPosts, getReadingTime } from '../utils/posts';
+import { getPosts, toEntryModel } from '../utils/posts';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -20,25 +20,17 @@ export async function getStaticPaths() {
 }
 
 const { post, newer, older } = Astro.props;
-const { title, date, excerpt, tags } = post.data;
+const entry = toEntryModel(post);
 ---
 
-<BaseLayout title={title} description={excerpt}>
-  <Entry
-    className="app__entry"
-    title={title}
-    date={date.toISOString().slice(0, 10)}
-    excerpt={excerpt}
-    readingTimeWPM={getReadingTime(post.body)}
-    html={post.rendered?.html ?? ''}
-    tags={tags.map((slug) => ({ slug, url: `/tag/${slug}/` }))}
-  />
-  <div class="app__pagination">
-    <EntryPagination
-      previousTitle={older?.data.title}
-      previousUrl={older && `/${older.id}/`}
-      nextTitle={newer?.data.title}
-      nextUrl={newer && `/${newer.id}/`}
-    />
+<BaseLayout title={entry.title} description={entry.description}>
+  <div class="app-entry-page">
+    <Entry entry={entry} html={post.rendered?.html ?? ''} />
+    <div class="app-entry-page__pagination">
+      <EntryPagination
+        previousEntry={older && toEntryModel(older)}
+        nextEntry={newer && toEntryModel(newer)}
+      />
+    </div>
   </div>
 </BaseLayout>

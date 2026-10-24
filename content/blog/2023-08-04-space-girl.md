@@ -2,7 +2,7 @@
 title: "Space Girl"
 date: 2023-08-04
 tags: ["artwork"]
-excerpt: ""
+description: ""
 image: "/content/images/2024/01/IMG_0042-2.png"
 ---
 

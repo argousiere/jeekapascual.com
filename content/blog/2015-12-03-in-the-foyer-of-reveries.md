@@ -2,7 +2,7 @@
 title: "In the Foyer of Reveries"
 date: 2015-12-03
 tags: ["expat"]
-excerpt: "Reminiscing my leap into the expat life."
+description: "Reminiscing my leap into the expat life."
 ---
 
 This year had been chock-full of administrative paperwork, where I had to choose between staying with my homeland comforts and leaving for better opportunities.  

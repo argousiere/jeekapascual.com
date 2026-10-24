@@ -2,7 +2,7 @@
 title: "Sonnet XIII: The Map of Fractals"
 date: 2008-02-21
 tags: ["poetry", "sonnet"]
-excerpt: "A variation of The Map of Constellations, but this time, looking at fallen leaves for wisdom."
+description: "A variation of The Map of Constellations, but this time, looking at fallen leaves for wisdom."
 ---
 
 Sorrow amidst my leaf-covered walkway  

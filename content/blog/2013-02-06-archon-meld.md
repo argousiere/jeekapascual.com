@@ -2,7 +2,7 @@
 title: "Archon Meld"
 date: 2013-02-06
 tags: ["prose", "celestial"]
-excerpt: "My love letter to the Science Fiction genre. A short story about a celestial traveler drifting through space and time."
+description: "My love letter to the Science Fiction genre. A short story about a celestial traveler drifting through space and time."
 ---
 
 It sends me reeling into the depths in space, where in them emanate low hums of a vast loneliness. Yet as inertia is discarded in each field I pass by, I float, whisk away, I gracefully extend my arms.. and unfold into a celestial flower in the midst of gas giants and frozen dirt. I marvel at these spherical sculptures that are littered all over a murky desert. No footsteps of past travelers to be seen, as I have charted these regions as the first and only of my kind. I extend my vision beyond these satellites and unto the silken tapestry; the first in a billion years have these lights been intercepted by organic eyes.

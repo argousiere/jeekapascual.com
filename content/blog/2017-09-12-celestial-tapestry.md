@@ -2,7 +2,7 @@
 title: "Celestial Tapestry"
 date: 2017-09-12
 tags: ["musings"]
-excerpt: "Weaving words and thoughts against the backdrop of space"
+description: "Weaving words and thoughts against the backdrop of space"
 ---
 
 Against the backdrop of empty space, I draw connections between the heavenly bodies. The distance between each one span millions of years through our humble, human eyes, yet is only a breath in the universe's lifetime.

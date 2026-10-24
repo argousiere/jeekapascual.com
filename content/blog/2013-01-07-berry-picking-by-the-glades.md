@@ -2,7 +2,7 @@
 title: "Berry-picking by the Glades"
 date: 2013-01-07
 tags: ["prose"]
-excerpt: ""
+description: ""
 ---
 
 Along the path in which I traverse, with your love nestled inside my satchel, I notice several points which seem to be littered with more flowers and underbrush than the one before. The songs of the birds in each area have a different, if not, more heartfelt tune, and as supple and luscious are the fruits that hang from the trees. I find myself wandering longer, taking a deeper whiff of the continuously sweetening aroma around me, letting the air envelope me with a feeling so mystical, it is as if I can hear small bells ring wherever I go.

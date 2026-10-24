@@ -2,7 +2,7 @@
 title: "Sonnet V: Pandora's Box"
 date: 2007-11-22
 tags: ["poetry", "sonnet"]
-excerpt: "Teenage sorrow alluding to Greek mythology."
+description: "Teenage sorrow alluding to Greek mythology."
 ---
 
 To a stained key, to open, I request  

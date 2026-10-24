@@ -2,7 +2,7 @@
 title: "Starwing Voyager M78-64JK"
 date: 2013-01-21
 tags: ["prose", "celestial"]
-excerpt: "A writing exercise about a space security guard being bored at work."
+description: "A writing exercise about a space security guard being bored at work."
 ---
 
 I am on my eighth checkpoint, and it's about time I reached the docking bay. My fuel tank is in need of a refill, and I am exhausted.

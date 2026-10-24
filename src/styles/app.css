@@ -44,18 +44,6 @@ body {
   margin: var(--ves-spacing-9) auto 0;
 }
 
-.app__entry {
-  width: 100%;
-  max-width: 48rem;
-  margin: auto;
-}
-
-.app__pagination {
-  width: 100%;
-  max-width: 48rem;
-  margin: var(--ves-spacing-9) auto 0;
-}
-
 .app__not-found {
   display: flex;
   flex: 1;
