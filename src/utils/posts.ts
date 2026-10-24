@@ -1,11 +1,11 @@
 import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
 import type { EntryModel } from '@argousiere/vespertina-design-system/core';
 import siteConfig from '../../site.config';
+import type { Post } from '../types';
 
 const WORDS_PER_MINUTE = 275;
 
-export const getPosts = async () =>
+export const getPosts = async (): Promise<Post[]> =>
   (await getCollection('blog')).sort(
     (a, b) => b.data.date.localeCompare(a.data.date)
   );
@@ -23,7 +23,7 @@ export const toEntryModel = ({
   id,
   data,
   body,
-}: CollectionEntry<'blog'>): EntryModel => ({
+}: Post): EntryModel => ({
   id,
   title: data.title,
   url: `/${id}/`,

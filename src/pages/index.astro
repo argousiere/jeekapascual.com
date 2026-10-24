@@ -1,11 +1,17 @@
 ---
-import { EntryList } from '@argousiere/vespertina-design-system/react';
+import {
+  EntryList,
+  FeaturedList,
+} from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getPosts, toEntryModel } from '../utils/posts';
+import { getFeaturedItems } from '../utils/featured-items';
 import siteConfig from '../../site.config';
 
 const posts = await getPosts();
-const items = posts.map((post) => ({ entry: toEntryModel(post) }));
+const entries = posts.map(toEntryModel);
+const items = entries.map((entry) => ({ entry }));
+const featuredItems = getFeaturedItems(entries);
 ---
 
 <BaseLayout>
@@ -14,6 +20,7 @@ const items = posts.map((post) => ({ entry: toEntryModel(post) }));
       <p class="app__tagline">{siteConfig.blurb}</p>
       <div class="ves-logo" role="img" aria-label="Vespertina logo"></div>
     </div>
+    {featuredItems?.length > 0 && <FeaturedList items={featuredItems} />}
   </section>
 
   <EntryList entryListTitle="Latest Posts" items={items} />
