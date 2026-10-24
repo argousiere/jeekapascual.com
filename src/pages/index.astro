@@ -2,6 +2,7 @@
 import { EntryList } from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getPosts, toEntryModel } from '../utils/posts';
+import siteConfig from '../../site.config';
 
 const posts = await getPosts();
 const items = posts.map((post) => ({ entry: toEntryModel(post) }));
@@ -9,8 +10,10 @@ const items = posts.map((post) => ({ entry: toEntryModel(post) }));
 
 <BaseLayout>
   <section class="app__hero">
-    <p class="app__tagline">Adventures in art and celestial wayfaring</p>
-    <div class="ves-logo" role="img" aria-label="Vespertina logo"></div>
+    <div class="app__hero-intro">
+      <p class="app__tagline">{siteConfig.blurb}</p>
+      <div class="ves-logo" role="img" aria-label="Vespertina logo"></div>
+    </div>
   </section>
 
   <EntryList entryListTitle="Latest Posts" items={items} />

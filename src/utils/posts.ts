@@ -1,6 +1,7 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import type { EntryModel } from '@argousiere/vespertina-design-system/core';
+import siteConfig from '../../site.config';
 
 const WORDS_PER_MINUTE = 275;
 
@@ -29,5 +30,5 @@ export const toEntryModel = ({
   date: data.date,
   description: data.description,
   readingTimeMinutes: getReadingTime(body),
-  tags: data.tags.map((slug) => ({ slug, url: `/tag/${slug}/` })),
+  tags: data.tags.map((slug) => ({ slug, url: `${siteConfig.tagBaseUrl}${slug}/` })),
 });

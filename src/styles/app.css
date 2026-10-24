@@ -25,8 +25,8 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-top: var(--ves-spacing-8);
   gap: var(--ves-spacing-9);
 }
