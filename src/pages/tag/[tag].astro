@@ -1,0 +1,22 @@
+---
+import { EntryList } from '@argousiere/vespertina-design-system/react';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPosts, getTagSlugs, toEntryModel } from '../../utils/posts';
+
+export async function getStaticPaths() {
+  const [posts, tags] = await Promise.all([getPosts(), getTagSlugs()]);
+
+  return tags.map((tag) => ({
+    params: { tag },
+    props: { posts: posts.filter(({ data }) => data.tags.includes(tag)) },
+  }));
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+const items = posts.map((post) => ({ entry: toEntryModel(post) }));
+---
+
+<BaseLayout title={`#${tag}`} description={`Entries tagged ${tag}`}>
+  <EntryList entryListTitle={`Tag: #${tag}`} headingLevel="h1" items={items} />
+</BaseLayout>

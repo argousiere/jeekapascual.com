@@ -1,0 +1,66 @@
+@import './footer.css';
+
+html {
+  background: var(--ves-global-color-midnight);
+}
+
+body {
+  height: max-content;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app__main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 var(--ves-spacing-10);
+}
+
+.app__hero {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  align-items: center;
+  margin-top: var(--ves-spacing-8);
+  gap: var(--ves-spacing-9);
+}
+
+.app__hero-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ves-spacing-9);
+}
+
+.app__tagline {
+  margin: 0;
+  font-size: var(--ves-font-size-xl);
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.app__main .ves-entry-list {
+  width: 100%;
+  max-width: 48rem;
+  margin: var(--ves-spacing-9) auto 0;
+}
+
+.app__not-found {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--ves-spacing-6);
+}
+
+.ves-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
