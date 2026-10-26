@@ -1,5 +1,5 @@
 import { defineCollection } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const DATE_PREFIX = /^(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})-/;
@@ -21,4 +21,12 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const tags = defineCollection({
+  loader: file('./content/tags.yml'),
+  schema: z.object({
+    label: z.string().optional(),
+    description: z.string().optional(),
+  }),
+});
+
+export const collections = { blog, tags };

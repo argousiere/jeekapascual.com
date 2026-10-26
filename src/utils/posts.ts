@@ -1,9 +1,23 @@
 import { getCollection } from 'astro:content';
-import type { EntryModel } from '@argousiere/vespertina-design-system/core';
+import type {
+  EntryModel,
+  TagModel,
+} from '@argousiere/vespertina-design-system/core';
 import siteConfig from '../../site.config';
 import type { Post } from '../types';
 
 const WORDS_PER_MINUTE = 275;
+
+const tagEntries = new Map(
+  (await getCollection('tags')).map(({ id, data }) => [id, data])
+);
+
+export const toTagModel = (slug: string): TagModel => ({
+  slug,
+  label: tagEntries.get(slug)?.label,
+  description: tagEntries.get(slug)?.description,
+  url: `${siteConfig.tagBaseUrl}${slug}/`,
+});
 
 export const getPosts = async (): Promise<Post[]> =>
   (await getCollection('blog')).sort(
@@ -30,5 +44,5 @@ export const toEntryModel = ({
   date: data.date,
   description: data.description,
   readingTimeMinutes: getReadingTime(body),
-  tags: data.tags.map((slug) => ({ slug, url: `${siteConfig.tagBaseUrl}${slug}/` })),
+  tags: data.tags.map(toTagModel),
 });

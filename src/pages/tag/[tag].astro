@@ -1,7 +1,7 @@
 ---
-import { EntryList } from '@argousiere/vespertina-design-system/react';
+import { EntriesView, TagHeader } from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getPosts, getTagSlugs, toEntryModel } from '../../utils/posts';
+import { getPosts, getTagSlugs, toEntryModel, toTagModel } from '../../utils/posts';
 
 export async function getStaticPaths() {
   const [posts, tags] = await Promise.all([getPosts(), getTagSlugs()]);
@@ -14,9 +14,16 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
+const tagModel = toTagModel(tag);
 const items = posts.map((post) => ({ entry: toEntryModel(post) }));
 ---
 
-<BaseLayout title={`#${tag}`} description={`Entries tagged ${tag}`}>
-  <EntryList entryListTitle={`Tag: #${tag}`} headingLevel="h1" items={items} />
+<BaseLayout
+  title={`#${tagModel.label ?? tag}`}
+  description={tagModel.description ?? `Entries tagged ${tagModel.label ?? tag}`}
+>
+  <div class="app-tag-page">
+    <TagHeader tag={tagModel} />
+    <EntriesView client:load entryListTitle="Entries" items={items} />
+  </div>
 </BaseLayout>
