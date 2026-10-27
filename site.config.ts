@@ -4,6 +4,7 @@ const siteConfig = {
   featuredEntries: ['archon-meld', 'starwing-voyager-m78-64jk'],
   navItems: [
     { label: 'Art', url: '/art/' },
+    { label: 'About', url: '/about/' },
   ],
   thumbnailWidth: 640,
 };
