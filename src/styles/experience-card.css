@@ -61,6 +61,9 @@
 }
 
 .experience-card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ves-spacing-4);
   padding-top: var(--ves-spacing-4);
 }
 
