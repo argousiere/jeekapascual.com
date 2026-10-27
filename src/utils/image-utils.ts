@@ -1,5 +1,6 @@
 import { IMAGES_URL } from 'astro:env/server';
 
+// Cloudinary transforms
 export const BLOG_IMAGE_TRANSFORM = 'c_limit,w_720,f_auto,q_auto';
 export const ARTWORK_IMAGE_TRANSFORM = 'f_auto,q_auto';
 

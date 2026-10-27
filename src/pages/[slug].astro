@@ -4,38 +4,21 @@ import {
   EntryPagination,
 } from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { BLOG_IMAGE_TRANSFORM, resolveImages } from '../utils/images';
-import { getBlogPosts } from '../utils/blog-utils';
-import { toEntryModel } from '../utils/post-utils';
+import { getBlogPages } from '../queries/blog-queries';
 
-export async function getStaticPaths() {
-  const posts = await getBlogPosts();
+export const getStaticPaths = () => getBlogPages();
 
-  return posts.map((post, index) => ({
-    params: { slug: post.id },
-    props: {
-      post,
-      newer: posts[index - 1],
-      older: posts[index + 1],
-    },
-  }));
-}
-
-const { post, newer, older } = Astro.props;
-const entry = toEntryModel(post);
-const processedHtml = resolveImages(
-  post.rendered?.html ?? '',
-  BLOG_IMAGE_TRANSFORM
-);
+const { page } = Astro.props;
+const { entry, html, previous, next } = page;
 ---
 
 <BaseLayout title={entry.title} description={entry.description}>
   <div class="app-entry-page">
-    <Entry entry={entry} html={processedHtml} />
+    <Entry entry={entry} html={html} />
     <div class="app-entry-page__pagination">
       <EntryPagination
-        previousEntry={older && toEntryModel(older)}
-        nextEntry={newer && toEntryModel(newer)}
+        previousEntry={previous}
+        nextEntry={next}
       />
     </div>
   </div>

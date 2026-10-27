@@ -1,8 +1,8 @@
 import { defineCollection } from 'astro:content';
 import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { DATE_PREFIX } from './utils/entry-utils';
 
-const DATE_PREFIX = /^(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})-/;
 
 const image = z.object({
   src: z.string(),
