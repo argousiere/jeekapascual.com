@@ -1,7 +1,7 @@
 ---
 title: "Berry-picking by the Glades"
 date: 2013-01-07
-tags: ["prose"]
+tags: ["prose", "writing"]
 description: ""
 ---
 

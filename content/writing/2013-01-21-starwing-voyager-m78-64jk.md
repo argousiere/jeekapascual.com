@@ -1,7 +1,7 @@
 ---
 title: "Starwing Voyager M78-64JK"
 date: 2013-01-21
-tags: ["prose", "celestial"]
+tags: ["prose", "celestial", "writing"]
 description: "A writing exercise about a space security guard being bored at work."
 ---
 

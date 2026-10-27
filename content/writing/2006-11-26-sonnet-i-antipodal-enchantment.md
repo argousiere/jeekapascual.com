@@ -1,7 +1,7 @@
 ---
 title: "Sonnet I: Antipodal Enchantment"
 date: 2006-11-26
-tags: ["poetry"]
+tags: ["poetry", "writing"]
 description: "I discovered sonnet-writing through an English class during my Sophomore year. This first one in my collection of sonnets relates a retelling of a past romance to the reverse changing of the seasons."
 ---
 

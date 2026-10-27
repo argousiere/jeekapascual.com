@@ -1,7 +1,7 @@
 ---
 title: "Snow White"
 date: 2013-01-21
-tags: ["prose", "nature", "reflection"]
+tags: ["prose", "nature", "reflection", "writing"]
 description: "A writing exercise on Snow White-esque themes of uncertainty and waiting out the snow storm."
 ---
 

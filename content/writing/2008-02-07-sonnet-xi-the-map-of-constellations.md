@@ -1,7 +1,7 @@
 ---
 title: "Sonnet XI: The Map of Constellations"
 date: 2008-02-07
-tags: ["poetry", "sonnet"]
+tags: ["poetry", "sonnet", "writing"]
 description: "A sonnet about seeking wisdom from the night sky"
 ---
 

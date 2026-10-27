@@ -1,7 +1,7 @@
 ---
 title: "Sonnet XVII: Celestial Broth"
 date: 2009-06-25
-tags: []
+tags: ["writing"]
 description: "Continuation of Sonnet XVI. Orbital gravity as a metaphor for unrequited love."
 ---
 

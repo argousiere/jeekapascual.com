@@ -10,14 +10,16 @@ export interface Tag {
   description?: string;
 }
 
-export type WithTags<P extends CollectionEntry<'blog' | 'art'>> = Omit<P, 'data'> & {
+export type WithTags<P extends CollectionEntry<'blog' | 'writing' | 'art'>> = Omit<P, 'data'> & {
   data: Omit<P['data'], 'tags'> & { tags: Tag[] };
 };
 
 export type BlogPost = WithTags<CollectionEntry<'blog'>>;
+export type WritingPost = WithTags<CollectionEntry<'writing'>>;
 export type ArtPost = WithTags<CollectionEntry<'art'>>;
-export type Post = BlogPost | ArtPost;
+
 export type PostImage = ArtPost['data']['image'];
+export type Post = BlogPost | WritingPost | ArtPost;
 
 export type BlogEntryModel = EntryModel;
 

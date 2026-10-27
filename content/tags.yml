@@ -27,7 +27,6 @@ paris:
   label: Paris
 poetry:
   label: Poetry
-  description: I dabbled a bit on poetry (mostly sonnets) back in high school and university, but haven't written anything new since then. So expect some decades-old, teenage-context attempts at literature.
 prose:
   label: Prose
 ramblings:
@@ -40,3 +39,6 @@ watercolors:
   label: Watercolors
 winter:
   label: Winter
+writing:
+  label: Writing
+  description: I dabbled a bit on poetry (mostly sonnets) back in high school and university, but haven't written anything new since then. So expect some decades-old, teenage-context attempts at literature.

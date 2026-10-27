@@ -1,7 +1,7 @@
 ---
 title: "Sonnet XVI: Lunar Photosynthesis"
 date: 2009-03-28
-tags: ["poetry", "sonnet"]
+tags: ["poetry", "sonnet", "writing"]
 description: "Continuation of Sonnet XIV. Building a botanical bridge to reach the moon."
 ---
 

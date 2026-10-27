@@ -1,7 +1,7 @@
 ---
 title: "Celestial Tapestry"
 date: 2017-09-12
-tags: ["musings"]
+tags: ["musings", "writing"]
 description: "Weaving words and thoughts against the backdrop of space"
 ---
 

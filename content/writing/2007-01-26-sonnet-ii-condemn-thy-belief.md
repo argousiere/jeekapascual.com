@@ -1,7 +1,7 @@
 ---
 title: "Sonnet II: Condemn Thy Belief"
 date: 2007-01-26
-tags: ["poetry", "sonnet"]
+tags: ["poetry", "sonnet", "writing"]
 description: "Although I'm no longer a practicing Catholic, this sonnet was written for a High School assignment where we expressed our thoughts on the persecution of martyr saints."
 ---
 

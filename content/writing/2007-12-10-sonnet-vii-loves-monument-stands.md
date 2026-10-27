@@ -1,7 +1,7 @@
 ---
 title: "Sonnet VII: Love's Monument Stands"
 date: 2007-12-10
-tags: ["poetry", "sonnet"]
+tags: ["poetry", "sonnet", "writing"]
 description: "One of my favorite sonnets"
 ---
 
