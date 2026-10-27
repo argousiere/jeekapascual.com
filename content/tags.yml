@@ -11,6 +11,9 @@ digital-art:
   label: Digital Art
 expat:
   label: Expat
+diy:
+  label: DIY
+  description: Home renovations, crafts, and tinkering around in the physical realm
 fantasy:
   label: Fantasy
 france:

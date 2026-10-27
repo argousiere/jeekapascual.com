@@ -11,7 +11,7 @@ const routes = {
 
 const siteConfig = {
   blurb: 'Adventures in art and celestial wayfaring',
-  featuredEntries: ['archon-meld', 'starwing-voyager-m78-64jk'],
+  featuredEntries: ['spaceship-office', 'archon-meld', 'starwing-voyager-m78-64jk'],
   routes,
   navItems: [
     routes.art,
