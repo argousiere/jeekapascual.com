@@ -1,7 +1,7 @@
 import { Label } from '@argousiere/vespertina-design-system/react';
-import DateRangeLabel from './DateRangeLabel';
+import DateRangeLabel, { type DateRangeLabelProps } from './DateRangeLabel';
 
-export interface ExperienceCardProps {
+export type ExperienceCardProps = Pick<DateRangeLabelProps, 'startDate' | 'endDate'> & {
   title: string;
   subtitle?: string;
   startDate?: string;

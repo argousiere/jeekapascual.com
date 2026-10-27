@@ -1,14 +1,11 @@
-import ExperienceCard from './ExperienceCard';
+import ExperienceCard, { type ExperienceCardProps } from './ExperienceCard';
 import ExperienceCardLinks from './ExperienceCardLinks';
 import type { ExperienceCardLinkProps } from './ExperienceCardLink';
 
-export interface ResearchCardProps {
-  title: string;
+export type ResearchCardProps = Pick<ExperienceCardProps, 'title' | 'startDate' | 'endDate' | 'location'> & {
   institution: string;
-  startDate?: string;
-  endDate?: string;
-  location?: string;
   links?: ExperienceCardLinkProps[];
+  children?: React.ReactNode;
 }
 
 const ResearchCard: React.FC<ResearchCardProps> = ({

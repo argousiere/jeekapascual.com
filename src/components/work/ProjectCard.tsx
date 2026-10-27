@@ -1,8 +1,8 @@
-import ExperienceCard from './ExperienceCard';
+import ExperienceCard, { type ExperienceCardProps } from './ExperienceCard';
 import ExperienceCardLinks from './ExperienceCardLinks';
 import type { ExperienceCardLinkProps } from './ExperienceCardLink';
 
-export interface ProjectCardProps {
+export interface ProjectCardProps extends Pick<ExperienceCardProps, 'startDate' | 'endDate' | 'location'> {
   name: string;
   description: string;
   links?: ExperienceCardLinkProps[];

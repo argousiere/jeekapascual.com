@@ -1,13 +1,11 @@
-import ExperienceCard from './ExperienceCard';
+import ExperienceCard, { type ExperienceCardProps } from './ExperienceCard';
 import ExperienceCardTopics from './ExperienceCardTopics';
 import TechnologyChip from './TechnologyChip';
 
-export interface EducationCardProps {
+export type EducationCardProps = Pick<ExperienceCardProps, 'startDate' | 'endDate' | 'location'> & {
   institution: string;
   degree: string;
   startDate: string;
-  endDate?: string;
-  location?: string;
   coursework?: string[];
   skills?: string[];
 }

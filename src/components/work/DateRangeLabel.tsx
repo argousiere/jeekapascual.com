@@ -2,8 +2,7 @@ import { DateLabel } from '@argousiere/vespertina-design-system/react';
 
 export interface DateRangeLabelProps {
   startDate?: string;
-  endDate?: string;
-  isOngoing?: boolean;
+  endDate?: string | 'ongoing';
   dateFormat?: string;
   className?: string;
 }
@@ -11,11 +10,12 @@ export interface DateRangeLabelProps {
 const DateRangeLabel: React.FC<DateRangeLabelProps> = ({
   startDate,
   endDate,
-  isOngoing,
   dateFormat = 'MMM yyyy',
   className,
-}) => (
-  <span className={['app-date-range-label', className].filter(Boolean).join(' ')}>
+}) => {
+  const isOngoing = endDate === 'ongoing';
+  
+  return (<span className={['app-date-range-label', className].filter(Boolean).join(' ')}>
     {startDate && <DateLabel dateTime={startDate} dateFormat={dateFormat} />}
 
     {startDate && endDate && <span className="app-date-range-label__separator">–</span>}
@@ -29,7 +29,7 @@ const DateRangeLabel: React.FC<DateRangeLabelProps> = ({
         <DateLabel dateTime={endDate} dateFormat={dateFormat} />
       )
     }
-  </span>
-);
+  </span>);
+};
 
 export default DateRangeLabel;

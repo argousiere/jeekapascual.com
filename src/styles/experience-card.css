@@ -11,7 +11,7 @@
 
 .experience-card__header {
   display: grid;
-  grid-template-columns: 1fr 40%;
+  grid-template-columns: 1fr 35%;
   column-gap: var(--ves-spacing-5);
   padding: var(--ves-spacing-3) var(--ves-spacing-5);
   background-color: color-mix(in srgb, var(--ves-border-color) 20%, transparent);

@@ -1,4 +1,4 @@
-import ExperienceCard from './ExperienceCard';
+import ExperienceCard, { type ExperienceCardProps } from './ExperienceCard';
 import TechnologyChip from './TechnologyChip';
 
 export interface WorkProject {
@@ -6,12 +6,9 @@ export interface WorkProject {
   responsibilities: string[];
 }
 
-export interface WorkCardProps {
+export type WorkCardProps = Pick<ExperienceCardProps, 'startDate' | 'endDate' | 'location'> & {
   company: string;
   position: string;
-  startDate: string;
-  endDate?: string;
-  location?: string;
   projects: WorkProject[];
   skills?: string[];
 }
@@ -55,7 +52,7 @@ const WorkCard: React.FC<WorkCardProps> = ({
       skills.length > 0 && (
         <section className="experience-card__group">
           <h4 className="experience-card__group-title">Skills</h4>
-          
+
           <ul className="technology-chips">
             {skills.map((skill) => (
               <li key={skill}>
