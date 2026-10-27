@@ -3,6 +3,10 @@ title: "Autumn's Arrival"
 date: 2015-10-21
 tags: ["expat", "france"]
 description: "When I was a child, I always dreamed of experiencing Autumn."
+cover:
+  src: /blog/autumns-arrival.jpg
+  width: 1440
+  height: 1080
 ---
 
 No other season marks the arrival of a new chapter quite as symbolically as that of Autumn.

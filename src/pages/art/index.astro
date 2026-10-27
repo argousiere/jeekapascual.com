@@ -1,0 +1,24 @@
+---
+import { EntriesView, TagHeader } from '@argousiere/vespertina-design-system/react';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import siteConfig from '../../../site.config';
+import { parseArtEntryModel } from '../../parsers/art-parser';
+import { parseTagModel } from '../../parsers/tag-parser';
+import { getArtPosts } from '../../queries/art-queries';
+import { getTag } from '../../queries/tag-queries';
+
+const tagModel = parseTagModel(getTag('art'));
+const items = (await getArtPosts()).map((post) => ({ entry: parseArtEntryModel(post) }));
+---
+
+<BaseLayout title="Art" description={tagModel.description}>
+  <div class="app-tag-page">
+    <TagHeader tag={tagModel} />
+    <EntriesView
+      client:load
+      entryListTitle="Entries"
+      items={items}
+      viewMode={siteConfig.routes.art.viewMode}
+    />
+  </div>
+</BaseLayout>

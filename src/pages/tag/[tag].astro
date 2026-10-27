@@ -1,22 +1,39 @@
 ---
-import { EntryList } from '@argousiere/vespertina-design-system/react';
+import { EntriesView, TagHeader } from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getPosts, getTagSlugs, toEntryModel } from '../../utils/posts';
+import siteConfig from '../../../site.config';
+import { parseTagModel } from '../../parsers/tag-parser';
+import { getPosts } from '../../queries/post-queries';
+import { getTag, getTagSlugs } from '../../queries/tag-queries';
+import { parseEntryModel } from '../../parsers/entry-parser';
 
 export async function getStaticPaths() {
-  const [posts, tags] = await Promise.all([getPosts(), getTagSlugs()]);
+  const posts = await getPosts();
+  const tags = getTagSlugs();
 
   return tags.map((tag) => ({
     params: { tag },
-    props: { posts: posts.filter(({ data }) => data.tags.includes(tag)) },
+    props: { posts: posts.filter(({ data }) => data.tags.some(({ slug }) => slug === tag)) },
   }));
 }
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
-const items = posts.map((post) => ({ entry: toEntryModel(post) }));
+const tagModel = parseTagModel(getTag(tag));
+const items = posts.map((post) => ({ entry: parseEntryModel(post) }));
 ---
 
-<BaseLayout title={`#${tag}`} description={`Entries tagged ${tag}`}>
-  <EntryList entryListTitle={`Tag: #${tag}`} headingLevel="h1" items={items} />
+<BaseLayout
+  title={`#${tagModel.label ?? tag}`}
+  description={tagModel.description ?? `Entries tagged ${tagModel.label ?? tag}`}
+>
+  <div class="app-tag-page">
+    <TagHeader tag={tagModel} />
+    <EntriesView
+      client:load
+      entryListTitle="Entries"
+      items={items}
+      viewMode={siteConfig.routes.tag.viewMode}
+    />
+  </div>
 </BaseLayout>

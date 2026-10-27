@@ -1,0 +1,42 @@
+adulthood:
+  label: Adulthood
+art:
+  label: Art
+  description: Here you'll mostly find digital art depicting space stuff, a few travel sketches, and the occasional botanical illustration.
+botanical-illustration:
+  label: Botanical Illustration
+celestial:
+  label: Celestial
+digital-art:
+  label: Digital Art
+expat:
+  label: Expat
+fantasy:
+  label: Fantasy
+france:
+  label: France
+introvert:
+  label: Introvert
+musings:
+  label: Musings
+nature:
+  label: Nature
+nostalgia:
+  label: Nostalgia
+paris:
+  label: Paris
+poetry:
+  label: Poetry
+  description: I dabbled a bit on poetry (mostly sonnets) back in high school and university, but haven't written anything new since then. So expect some decades-old, teenage-context attempts at literature.
+prose:
+  label: Prose
+ramblings:
+  label: Ramblings
+reflection:
+  label: Reflection
+sonnet:
+  label: Sonnet
+watercolors:
+  label: Watercolors
+winter:
+  label: Winter

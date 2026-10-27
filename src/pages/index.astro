@@ -1,15 +1,13 @@
 ---
-import {
-  EntryList,
-  FeaturedList,
-} from '@argousiere/vespertina-design-system/react';
+import { EntriesView, FeaturedList } from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getPosts, toEntryModel } from '../utils/posts';
-import { getFeaturedItems } from '../utils/featured-items';
+import { parseEntryModel } from '../parsers/entry-parser';
+import { getPosts } from '../queries/post-queries';
+import { getFeaturedItems } from '../queries/featured-queries';
 import siteConfig from '../../site.config';
 
 const posts = await getPosts();
-const entries = posts.map(toEntryModel);
+const entries = posts.map(parseEntryModel);
 const items = entries.map((entry) => ({ entry }));
 const featuredItems = getFeaturedItems(entries);
 ---
@@ -23,6 +21,5 @@ const featuredItems = getFeaturedItems(entries);
     {featuredItems?.length > 0 && <FeaturedList items={featuredItems} />}
   </section>
 
-  <EntryList entryListTitle="Latest Posts" items={items} />
-  
+  <EntriesView client:load entryListTitle="Latest Posts" items={items} />
 </BaseLayout>

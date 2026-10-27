@@ -1,0 +1,9 @@
+.app-tag-page {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  .ves-page-header {
+    margin-inline: auto;
+  }
+}

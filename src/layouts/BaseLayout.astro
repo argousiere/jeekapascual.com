@@ -2,6 +2,8 @@
 import '@argousiere/vespertina-design-system/core/tokens.css';
 import '@argousiere/vespertina-design-system/core/styles.css';
 import '../styles/index.css';
+import eurostileRegularUrl from '@argousiere/vespertina-design-system/core/fonts/eurostilenextltproregular.woff2?url';
+import eurostileSemiboldUrl from '@argousiere/vespertina-design-system/core/fonts/eurostilenextltprosmbd.woff2?url';
 import { Navbar } from '@argousiere/vespertina-design-system/react';
 import Footer from '../components/Footer';
 import siteConfig from '../../site.config';
@@ -16,8 +18,16 @@ const {
   title,
   description = siteConfig.blurb,
 } = Astro.props;
+
 const pageTitle = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
+
 const canonical = new URL(Astro.url.pathname, Astro.site);
+
+const currentUrl = Astro.url.pathname.replace(/(.)\/$/, '$1');
+
+const activeUrl = siteConfig.navItems.find(({ url }) =>
+  currentUrl === url || currentUrl.startsWith(`${url}/`)
+)?.url;
 ---
 
 <html lang="en">
@@ -27,6 +37,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="preload" href={eurostileRegularUrl} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={eurostileSemiboldUrl} as="font" type="font/woff2" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +48,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   </head>
   <body class="vespertina-theme vespertina-theme--dark">
     <div class="site">
-      <Navbar title={SITE_TITLE} homeUrl="/" />
+      <Navbar
+        title={SITE_TITLE}
+        homeUrl="/"
+        navItems={siteConfig.navItems}
+        activeUrl={activeUrl}
+        currentUrl={currentUrl}
+      />
       <main id="main" class="app__main">
         <slot />
       </main>

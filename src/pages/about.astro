@@ -1,0 +1,21 @@
+---
+import { Entry } from '@argousiere/vespertina-design-system/react';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import siteConfig from '../../site.config';
+import { blogHtmlProcessor } from '../processors/blog-html-processor';
+import { compiledContent, frontmatter } from '../../content/about.md';
+
+const entry = {
+  id: 'about',
+  title: frontmatter.title,
+  url: siteConfig.routes.about.url,
+  date: '',
+};
+const html = blogHtmlProcessor.process(await compiledContent(), { entry });
+---
+
+<BaseLayout title={entry.title}>
+  <div class="app-entry-page">
+    <Entry entry={entry} html={html} />
+  </div>
+</BaseLayout>
