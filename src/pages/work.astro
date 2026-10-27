@@ -10,7 +10,7 @@ import ExperienceSection from '../components/work/ExperienceSection';
 
 const { label } = siteConfig.routes.work;
 const intro =
-  'Senior front-end engineer with 13+ years of experience building enterprise applications. I specialize in design systems, data visualization, and web accessibility.';
+  'Senior front-end engineer with 13+ years of experience building enterprise applications. I specialize in design systems, data visualization, and web accessibility. Studying Georgia Tech OMSCS part-time, taking the Graphics specialization.';
 ---
 
 <BaseLayout title={label} description={intro}>
@@ -165,29 +165,35 @@ const intro =
         startDate="2026-01-14"
         endDate="2026-07-31"
         links={[{ label: 'GitHub', url: 'https://github.com/tiles-lab/accessible-whiteboarding/wiki' }]}
-      />
+      >
+        <p>Miro is widely used in higher education, yet it remains largely inaccessible to blind and low-vision users despite ADA Title II requirements. This prototype is a Miro app that lets blind and low-vision users create and navigate concept maps. It runs alongside the whiteboard, so users never have to leave Miro.</p>
+      </ResearchCard>
 
       <ResearchCard
-        title="Architecting Design Systems for Web Accessibility"
-        institution="Master's thesis, University of Strasbourg"
+        title="A Comparative Study of Web Accessibility Guidelines in Design Systems"
+        institution="University of Strasbourg · Master's thesis"
         endDate="2023-11-01"
-        links={[{ label: 'Read on LinkedIn', url: 'https://www.linkedin.com/in/jeanellapascual/overlay/Education/774312689/treasury/?profileId=ACoAABCSBaIBntdgH_GEJJVX3M0MJ4UT67x5Z5o' }]}
-      />
+        links={[{ label: 'Thesis', url: 'https://www.linkedin.com/in/jeanellapascual/overlay/Education/774312689/treasury/?profileId=ACoAABCSBaIBntdgH_GEJJVX3M0MJ4UT67x5Z5o' }]}
+      >
+        <p>Comparative study of 5 design systems from the <a class="experience-card__link" href="https://open-ui.org/">Open UI</a> catalog and how they integrate web accessibility guidelines. Each is analyzed on the 4 components of information architecture and on the quality of its alignment with WCAG. The findings offer software teams practical guidance for building accessibility into their design systems.</p>
+      </ResearchCard>
 
       <ResearchCard
         title="The Road to a More Accessible Web: Bridging the Inequality Gap with AI"
-        institution="Graduate Inequality Review vol. 2"
+        institution="Graduate Inequality Review, Vol. II"
         endDate="2023-07-14"
-        links={[{ label: 'Journal', url: 'https://www.graduateinequalityreview.com/volume-ii.html' }]}
-      />
+        links={[{ label: 'Article', url: 'https://www.graduateinequalityreview.com/volume-ii.html' }]}
+      >
+        <p>Low web accessibility is an understudied dimension of the digital divide, affecting 1.3 billion people worldwide. The article argues that improving web accessibility benefits not only persons with disabilities but social welfare as a whole, and explores AI use cases that can help. It calls on governments, industry, and academia to invest in AI for accessibility to help close the global inequality gap.</p>
+      </ResearchCard>
     </ExperienceSection>
 
     <ExperienceSection id="work-projects" title="Projects" icon="project" theme="projects">
       <ProjectCard
         name="Vespertina Design System"
-        description="The design system behind this website, from Figma designs to React components."
+        description="My personal design system powering this site. Designed from scratch in Figma and implemented in React."
         links={[
-          { label: 'Storybook', url: 'https://argousiere.github.io/vespertina-ui-react' },
+          { label: 'Storybook', url: 'https://argousiere.github.io/vespertina-design-system/' },
           { label: 'Figma', url: 'https://www.figma.com/design/jiNUbgAPy50E6CpPQEvW16/Vespertine-Cadet?node-id=377-24&t=GjcURnCKMKcftSI5-1' },
         ]}
       />

@@ -15,6 +15,7 @@ const ResearchCard: React.FC<ResearchCardProps> = ({
   endDate,
   location,
   links = [],
+  children,
 }) => (
   <ExperienceCard
     title={title}
@@ -22,6 +23,7 @@ const ResearchCard: React.FC<ResearchCardProps> = ({
     startDate={startDate}
     endDate={endDate}
     location={location}
+    body={children}
     footer={links.length > 0 && <ExperienceCardLinks links={links} />}
   />
 );
