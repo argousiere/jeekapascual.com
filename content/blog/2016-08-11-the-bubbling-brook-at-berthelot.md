@@ -1,7 +1,7 @@
 ---
 title: "The Bubbling Brook at Berthelot"
 date: 2016-08-11
-tags: ["nature", "expat"]
+tags: ["nature", "france"]
 description: "An ode to the little park beside my office"
 ---
 

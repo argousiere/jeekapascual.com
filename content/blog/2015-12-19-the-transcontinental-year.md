@@ -1,7 +1,7 @@
 ---
 title: "The Transcontinental Year"
 date: 2015-12-19
-tags: ["expat", "france"]
+tags: ["france"]
 description: "Reminiscing on the administrative hoops I jumped through to get to France"
 cover:
   src: /blog/the-transcontinental-year.jpg

@@ -1,7 +1,7 @@
 ---
 title: "Ode to a Parisian Governor's Wife"
 date: 2016-12-22
-tags: ["expat", "paris"]
+tags: ["france", "paris"]
 description: "Spending a night at an old Parisian governor's house"
 ---
 
