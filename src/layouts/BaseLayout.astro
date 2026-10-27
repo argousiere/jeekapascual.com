@@ -21,8 +21,10 @@ const pageTitle = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
 
 const canonical = new URL(Astro.url.pathname, Astro.site);
 
+const currentUrl = Astro.url.pathname.replace(/(.)\/$/, '$1');
+
 const activeUrl = siteConfig.navItems.find(({ url }) =>
-  Astro.url.pathname.startsWith(url)
+  currentUrl === url || currentUrl.startsWith(`${url}/`)
 )?.url;
 ---
 
@@ -47,7 +49,7 @@ const activeUrl = siteConfig.navItems.find(({ url }) =>
         homeUrl="/"
         navItems={siteConfig.navItems}
         activeUrl={activeUrl}
-        currentUrl={Astro.url.pathname}
+        currentUrl={currentUrl}
       />
       <main id="main" class="app__main">
         <slot />

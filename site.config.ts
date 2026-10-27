@@ -1,11 +1,17 @@
+import { EntriesViewMode } from '@argousiere/vespertina-design-system/react';
+
+const routes = {
+  home: { url: '/' },
+  art: { label: 'Art', url: '/art', viewMode: EntriesViewMode.GALLERY },
+  tag: { url: '/tag', viewMode: EntriesViewMode.LIST },
+  about: { label: 'About', url: '/about' },
+};
+
 const siteConfig = {
-  tagBaseUrl: '/tag/',
   blurb: 'Adventures in art and celestial wayfaring',
   featuredEntries: ['archon-meld', 'starwing-voyager-m78-64jk'],
-  navItems: [
-    { label: 'Art', url: '/art/' },
-    { label: 'About', url: '/about/' },
-  ],
+  routes,
+  navItems: [routes.art, routes.about],
   thumbnailWidth: 640,
 };
 
