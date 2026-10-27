@@ -1,5 +1,6 @@
 :root {
   --experience-card-line-height: calc(var(--ves-grid-size) * 0.75);
+  --experience-accent-color: var(--ves-global-color-cerulean);
 }
 
 .experience-card {
@@ -109,7 +110,7 @@
 
 .experience-card__link {
   display: inline;
-  color: var(--ves-global-color-cerulean);
+  color: var(--experience-accent-color);
   font-weight: var(--ves-font-weight-light);
 
   &:hover {

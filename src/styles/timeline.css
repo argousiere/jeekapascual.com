@@ -16,7 +16,7 @@
   top: var(--timeline-dot-top);
   left: 0;
   border-radius: 50%;
-  background: var(--ves-global-color-cerulean);
+  background: var(--experience-accent-color);
   width: var(--timeline-dot-size);
   height: var(--timeline-dot-size);
   content: '';
