@@ -1,0 +1,32 @@
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--ves-spacing-9);
+  gap: var(--ves-spacing-7);
+}
+
+.experience-section__title {
+  border-bottom: 1px solid var(--ves-border-color);
+
+  .ves-label {
+    gap: var(--ves-spacing-4);
+  }
+}
+
+.experience-section--education {
+  --ves-border-color: var(--ves-global-color-aurora-dark-3);
+  --ves-divider-color: var(--ves-global-color-aurora-dark-3);
+  --experience-accent-color: var(--ves-global-color-aurora);
+}
+
+.experience-section--research {
+  --ves-border-color: var(--ves-global-color-vespene-dark-3);
+  --ves-divider-color: var(--ves-global-color-vespene-dark-3);
+  --experience-accent-color: var(--ves-global-color-vespene);
+}
+
+.experience-section--projects {
+  --ves-border-color: var(--ves-global-color-gliese-dark-3);
+  --ves-divider-color: var(--ves-global-color-gliese-dark-3);
+  --experience-accent-color: var(--ves-global-color-gliese-light-1);
+}

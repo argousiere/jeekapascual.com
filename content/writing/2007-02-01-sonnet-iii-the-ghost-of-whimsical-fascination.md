@@ -1,7 +1,7 @@
 ---
 title: "Sonnet III: The Ghost of Whimsical Fascination"
 date: 2007-02-01
-tags: ["poetry", "sonnet"]
+tags: ["poetry", "sonnet", "writing"]
 description: "A tribute to all the unknown writers in the past millennia"
 ---
 

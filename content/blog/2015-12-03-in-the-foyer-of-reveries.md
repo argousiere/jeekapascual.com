@@ -1,8 +1,8 @@
 ---
 title: "In the Foyer of Reveries"
 date: 2015-12-03
-tags: ["expat"]
-description: "Reminiscing my leap into the expat life."
+tags: ["france"]
+description: "Reminiscing my leap into life abroad."
 cover:
   src: /blog/in-the-foyer-of-reveries.jpg
   width: 960

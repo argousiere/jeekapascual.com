@@ -6,21 +6,29 @@ I started this blog, among a million other hobbies, as an attempt to wrestle dow
 
 As I navigate through this celestial soup called Life, I try to share my adventures here in the form of art, code snippets, or journal entries.
 
-I've been patiently waiting for the day my cerebellum returns from the nebulae, bloated with the answers to all my vexing, otherworldly questions.
+Since then, I've been patiently waiting for the day my cerebellum returns from the nebulae, bloated with the answers to all my vexing, otherworldly questions.
 
 ## Author Blurb
 
-![Me playing with autumn leaves in Nacka, Stockholm](/about/about_me.jpg "Playing with autumn leaves in Nacka, Stockholm")
+Mademoiselle from the Philippines, working in France as a front-end developer since 2015. I fell in love with the [French language](/in-the-foyer-of-reveries) when I was 14, and this is one of the reasons why I am now here. Finally managed to achieve C1 fluency, with the help of copious amounts of fromage and bread.
 
-Mademoiselle from the Philippines, currently working in France as a front-end developer. I fell in love with the French language when I was 14, and this is one of the reasons why I am now here. Finally managed to achieve C1 fluency, with the help of copious amounts of fromage.
+![Me playing with autumn leaves in Stockholm, Sweden](/about/about_me.jpg "Playing with autumn leaves in Stockholm, Sweden")
 
-Graduate of Computer Science from the University of the Philippines. Proud to be raised in Mindanao, and educated at Dole Philippines School (Long live pineapples!).
+Graduate of Computer Science from the University of the Philippines. Proud to be raised in Mindanao, and educated at Dole Philippines School *(Long live pineapples!)*.
 
-Aspiring botanical illustrator. Frustrated bookworm.
+## Hobbies and Interests
+When I'm not burning the midnight oil coding, I dabble in:
+- Journaling
+- [Digital Art](/tag/digital-art)
+- [Botanical illustration](/tag/botanical-illustration)
+- Graphics Programming and lifelong learning
+- Music
+
+![](/about/playing-the-flute.jpg "Here's a photo of me during end of Year 2 flute recital, June 2026")
 
 ### Other things I like
 
-Outer space, sci-fi, foreign languages, traveling with friends, earthen colors, cats, and Mozart.
+Aside from being a frustrated bookworm, I'm enamored by: outer space, sci-fi, foreign languages, traveling with friends, earthen colors, bubble milk tea, cats, and Mozart.
 
 ### Find me on
 

@@ -1,0 +1,24 @@
+---
+import { EntriesView, TagHeader } from '@argousiere/vespertina-design-system/react';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import siteConfig from '../../../site.config';
+import { parseWritingEntryModel } from '../../parsers/writing-parser';
+import { parseTagModel } from '../../parsers/tag-parser';
+import { getWritingPosts } from '../../queries/writing-queries';
+import { getTag } from '../../queries/tag-queries';
+
+const tagModel = parseTagModel(getTag('writing'));
+const items = (await getWritingPosts()).map((post) => ({ entry: parseWritingEntryModel(post) }));
+---
+
+<BaseLayout title={siteConfig.routes.writing.label} description={tagModel.description}>
+  <div class="app-tag-page">
+    <TagHeader tag={tagModel} />
+    <EntriesView
+      client:load
+      entryListTitle="Entries"
+      items={items}
+      viewMode={siteConfig.routes.writing.viewMode}
+    />
+  </div>
+</BaseLayout>

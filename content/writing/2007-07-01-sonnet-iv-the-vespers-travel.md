@@ -1,7 +1,7 @@
 ---
 title: "Sonnet IV: The Vesper's Travel"
 date: 2007-07-01
-tags: ["poetry", "sonnet"]
+tags: ["poetry", "sonnet", "writing"]
 description: "Cheesy teenage writing. I'm only leaving this here because of nostalgia."
 ---
 

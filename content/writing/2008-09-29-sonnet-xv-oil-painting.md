@@ -1,7 +1,7 @@
 ---
 title: "Sonnet XV: Oil Painting"
 date: 2008-09-29
-tags: ["poetry", "sonnet"]
+tags: ["poetry", "sonnet", "writing"]
 description: "A variation of Sonnet XIV, but with an oil painting metaphor."
 ---
 

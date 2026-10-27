@@ -34,6 +34,11 @@ const blog = defineCollection({
   schema: entry,
 });
 
+const writing = defineCollection({
+  loader: entries('./content/writing'),
+  schema: entry,
+});
+
 const art = defineCollection({
   loader: entries('./content/art'),
   schema: entry.extend({ image }),
@@ -47,4 +52,4 @@ const tags = defineCollection({
   }),
 });
 
-export const collections = { blog, art, tags };
+export const collections = { blog, writing, art, tags };

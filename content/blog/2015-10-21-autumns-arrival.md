@@ -1,7 +1,7 @@
 ---
 title: "Autumn's Arrival"
 date: 2015-10-21
-tags: ["expat", "france"]
+tags: ["france"]
 description: "When I was a child, I always dreamed of experiencing Autumn."
 cover:
   src: /blog/autumns-arrival.jpg

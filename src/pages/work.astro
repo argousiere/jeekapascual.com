@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import siteConfig from '../../site.config';
+import WorkCard from '../components/work/WorkCard';
+import EducationCard from '../components/work/EducationCard';
+import ResearchCard from '../components/work/ResearchCard';
+import ProjectCard from '../components/work/ProjectCard';
+import ExperienceCardLink from '../components/work/ExperienceCardLink';
+import ExperienceSection from '../components/work/ExperienceSection';
+
+const { label } = siteConfig.routes.work;
+const intro =
+  'Senior front-end engineer with 13+ years of experience building enterprise applications. I specialize in design systems, data visualization, and web accessibility. Studying Georgia Tech OMSCS part-time, taking the Graphics specialization.';
+---
+
+<BaseLayout title={label} description={intro}>
+  <div class="app-work">
+    <header class="app-work__header">
+      <h1 class="app-work__title">{label}</h1>
+      <p>{intro}</p>
+      <ul class="app-work__links">
+        <li><ExperienceCardLink url="https://github.com/argousiere" label="GitHub" icon="github" showExternalIcon={false} /></li>
+        <li><ExperienceCardLink url="https://linkedin.com/in/jeanellapascual" label="LinkedIn" icon="linkedin" showExternalIcon={false} /></li>
+        <li><ExperienceCardLink url="mailto:dev@jeekapascual.com" label="Email" icon="mail" showExternalIcon={false} /></li>
+      </ul>
+    </header>
+
+    <ExperienceSection id="professional-experience" title="Professional Experience" icon="work">
+      <WorkCard
+        company="Dataiku"
+        position="Senior Software Engineer"
+        startDate="2022-12-01"
+        endDate="ongoing"
+        location="Paris, France (Remote)"
+        projects={[
+          {
+            name: 'Dataiku Stories',
+            responsibilities: [
+              'Developed a theming system where users can define, customize, and import/export themes with schema validation.',
+              'Implemented datetime search filters with timezone handling.',
+              'Drove UI/UX consistency initiatives through Storybook documentation, collaboration with product managers and designers.',
+              'Increased test coverage in toolkit, UI, and backend packages.',
+              'Mentored teammates on testing, modular code, and thorough PR reviews.'
+            ],
+          },
+          {
+            name: 'AI Governance',
+            responsibilities: [
+              'Developed a configurable dashboard builder for customizing page layouts, search filters, and charts by asset type.',
+              'Implemented search filters UI that support condition groups and multiple datatypes.'
+            ],
+          },
+        ]}
+        skills={['React', 'Redux', 'Angular', 'Storybook', 'Jest', 'Playwright', 'Jenkins', 'Java']}
+      />
+      <WorkCard
+        company="Perfect Memory"
+        position="Senior Front-end Developer"
+        startDate="2015-10-01"
+        endDate="2022-06-01"
+        location="Clermont-Ferrand, France"
+        projects={[
+          {
+            responsibilities: [
+              'Developed and unit-tested 60+ components for the core UI library, and led architecture and code reviews in a team of 8 front-end developers.',
+              'Architected a timeline editor handling 100+ video tags with zooming, panning, and lazy loading.',
+              'Implemented 2 design systems in Storybook from AdobeXD specifications.',
+            ],
+          },
+        ]}
+        skills={['Angular', 'Web Components', 'Jasmine', 'HTML/CSS', 'Storybook', 'GitLab CI/CD', 'E2E Tests', 'Chromatic']}
+      />
+      <WorkCard
+        company="Migo Entertainment"
+        position="Team Lead, Front-end Developer"
+        startDate="2013-12-01"
+        endDate="2015-06-01"
+        location="Manila, Philippines"
+        projects={[
+          {
+            responsibilities: [
+              'Led a team of 9 developers building a content production system for 100+ shows and movies.',
+              'Migrated the codebase from Backbone to AngularJS, reducing lines of code by 40%.',
+              'Mentored junior developers and interviewed 15+ candidates.',
+            ],
+          },
+        ]}
+        skills={['AngularJS', 'Java', 'JavaFX', 'PostgreSQL', 'Jenkins']}
+      />
+      <WorkCard
+        company="Chuzi, Inc."
+        position="UX Designer"
+        startDate="2013-05-01"
+        endDate="2013-11-01"
+        location="Quezon City, Philippines"
+        projects={[
+          {
+            responsibilities: [
+              'Designed mobile app prototypes adhering to iOS and Android design guidelines.',
+              'Designed icons.',
+            ],
+          },
+        ]}
+        skills={['Photoshop', 'Illustrator', 'Icon Design', 'JavaScript', 'CSS']}
+      />
+      <WorkCard
+        company="icannhas Inc."
+        position="Game Artist"
+        startDate="2011-01-01"
+        endDate="2011-07-01"
+        location="Quezon City, Philippines"
+        projects={[
+          {
+            responsibilities: [
+              'Animated characters and cutscenes in Flash.',
+              'Illustrated character art, backgrounds, icon sets, and user interface elements for web-based and mobile games.',
+            ],
+          },
+        ]}
+        skills={['Photoshop', 'Illustrator', 'Flash Animation', 'Digital Illustration']}
+      />
+    </ExperienceSection>
+
+    <ExperienceSection id="work-education" title="Education" icon="education" theme="education">
+      <EducationCard
+        institution="Georgia Institute of Technology"
+        degree="M.S. Computer Science"
+        startDate="2024-08-01"
+        endDate="ongoing"
+        location="Atlanta, Georgia, USA (online)"
+        coursework={[
+          'Software Analysis',
+          'Game AI',
+          'Computer Graphics',
+          'Video Game Design',
+          'Computer Graphics in the AI Era',
+          'Accessibility Research Group (Special Topics)'
+        ]}
+        skills={['C#', 'WebGL', 'Java', 'React', 'Typescript', 'LLVM', 'Miro SDK', 'Cloudflare']}
+      />
+      <EducationCard
+        institution="University of Strasbourg"
+        degree="M.A. Technical Communication & Localization"
+        startDate="2022-01-01"
+        endDate="2023-11-01"
+        location="Strasbourg, France"
+        coursework={['Mobile App Localization', 'Web Development', 'Project Management', 'Usability & UX Design']}
+        skills={['Android', 'Javascript', 'Adobe Illustrator', 'Adobe InDesign']}
+      />
+      <EducationCard
+        institution="University of the Philippines - Diliman"
+        degree="B.S. Computer Science"
+        startDate="2008-06-01"
+        endDate="2013-11-01"
+        location="Quezon City, Philippines"
+        coursework={['Data Structures & Algorithms', 'Operating Systems', 'Databases', 'Networks', 'Discrete Math', 'Statistics']}
+        skills={['C', 'Java', 'Android']}
+      />
+    </ExperienceSection>
+
+    <ExperienceSection id="work-research" title="Research & Publications" icon="publication" theme="research">
+      <ResearchCard
+        title="Accessible Whiteboarding"
+        institution="Georgia Tech TILES Lab"
+        startDate="2026-01-14"
+        endDate="2026-07-31"
+        links={[{ label: 'GitHub', url: 'https://github.com/tiles-lab/accessible-whiteboarding/wiki' }]}
+      >
+        <p>Miro is widely used in higher education, yet it remains largely inaccessible to blind and low-vision users despite ADA Title II requirements. This prototype is a Miro app that lets blind and low-vision users create and navigate concept maps. It runs alongside the whiteboard, so users never have to leave Miro.</p>
+      </ResearchCard>
+
+      <ResearchCard
+        title="A Comparative Study of Web Accessibility Guidelines in Design Systems"
+        institution="University of Strasbourg · Master's thesis"
+        endDate="2023-11-01"
+        links={[{ label: 'Thesis', url: 'https://www.linkedin.com/in/jeanellapascual/overlay/Education/774312689/treasury/?profileId=ACoAABCSBaIBntdgH_GEJJVX3M0MJ4UT67x5Z5o' }]}
+      >
+        <p>Comparative study of 5 design systems from the <a class="experience-card__link" href="https://open-ui.org/">Open UI</a> catalog and how they integrate web accessibility guidelines. Each is analyzed on the 4 components of information architecture and on the quality of its alignment with WCAG. The findings offer software teams practical guidance for building accessibility into their design systems.</p>
+      </ResearchCard>
+
+      <ResearchCard
+        title="The Road to a More Accessible Web: Bridging the Inequality Gap with AI"
+        institution="Graduate Inequality Review, Vol. II"
+        endDate="2023-07-14"
+        links={[{ label: 'Article', url: 'https://www.graduateinequalityreview.com/volume-ii.html' }]}
+      >
+        <p>Low web accessibility is an understudied dimension of the digital divide, affecting 1.3 billion people worldwide. The article argues that improving web accessibility benefits not only persons with disabilities but social welfare as a whole, and explores AI use cases that can help. It calls on governments, industry, and academia to invest in AI for accessibility to help close the global inequality gap.</p>
+      </ResearchCard>
+    </ExperienceSection>
+
+    <ExperienceSection id="work-projects" title="Projects" icon="project" theme="projects">
+      <ProjectCard
+        name="Vespertina Design System"
+        description="My personal design system powering this site. Designed from scratch in Figma and implemented in React."
+        links={[
+          { label: 'Storybook', url: 'https://argousiere.github.io/vespertina-design-system/' },
+          { label: 'Figma', url: 'https://www.figma.com/design/jiNUbgAPy50E6CpPQEvW16/Vespertine-Cadet?node-id=377-24&t=GjcURnCKMKcftSI5-1' },
+        ]}
+        skills={['React', 'Storybook', 'Figma', 'CSS Variables', 'Vite', 'NPM Publishing']}
+      />
+
+       <ProjectCard
+        name="jeekapascual.com"
+        description="Personal website built on top of my own Vespertina Design System."
+        links={[
+          { label: 'GitHub', url: 'https://github.com/argousiere/jeekapascual.com' },
+        ]}
+        skills={['AstroJS', 'React', 'Vite', 'GitHub Actions', 'Cloudinary']}
+      />
+    </ExperienceSection>
+  </div>
+</BaseLayout>

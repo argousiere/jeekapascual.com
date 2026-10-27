@@ -1,7 +1,7 @@
 ---
 title: "Archon Meld"
 date: 2013-02-06
-tags: ["prose", "celestial"]
+tags: ["prose", "celestial", "writing"]
 description: "My love letter to the Science Fiction genre. A short story about a celestial traveler drifting through space and time."
 ---
 

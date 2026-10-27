@@ -1,7 +1,7 @@
 ---
 title: "Dryad's Song"
 date: 2013-01-25
-tags: ["prose", "nature", "fantasy"]
+tags: ["prose", "nature", "fantasy", "writing"]
 description: "A short story of a dryad waking up from a deep slumber and encountering a lost hunter."
 ---
 

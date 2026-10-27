@@ -3,20 +3,22 @@ import react from '@astrojs/react';
 import { readdirSync } from 'node:fs';
 import { DATE_PREFIX } from './src/utils/entry-utils';
 
-const artRedirects = Object.fromEntries(
-  readdirSync('./content/art').map((file) => {
-    const slug = file
-      .replace(/\.md$/, '')
-      .replace(DATE_PREFIX, '');
+const collectionRedirects = Object.fromEntries(
+  ['art', 'writing'].flatMap((collection) =>
+    readdirSync(`./content/${collection}`).map((file) => {
+      const slug = file
+        .replace(/\.md$/, '')
+        .replace(DATE_PREFIX, '');
 
-    return [`/${slug}`, `/art/${slug}/`];
-  })
+      return [`/${slug}`, `/${collection}/${slug}/`];
+    })
+  )
 );
 
 export default defineConfig({
   site: 'https://jeekapascual.com',
   integrations: [react()],
-  redirects: artRedirects,
+  redirects: collectionRedirects,
   env: {
     schema: {
       IMAGES_URL: envField.string({ context: 'server', access: 'public' }),

@@ -1,0 +1,28 @@
+---
+import {
+  Entry,
+  EntryPagination,
+} from '@argousiere/vespertina-design-system/react';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getWritingPages } from '../../queries/writing-queries';
+
+export const getStaticPaths = () => getWritingPages();
+
+const { page } = Astro.props;
+const { entry, html, previous, next } = page;
+---
+
+<BaseLayout 
+  title={entry.title} 
+  description={entry.description}>
+  <div class="app-entry-page">
+    <Entry entry={entry} html={html} />
+
+    <div class="app-entry-page__pagination">
+      <EntryPagination
+        previousEntry={previous}
+        nextEntry={next}
+      />
+    </div>
+  </div>
+</BaseLayout>

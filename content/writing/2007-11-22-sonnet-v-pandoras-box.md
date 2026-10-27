@@ -1,7 +1,7 @@
 ---
 title: "Sonnet V: Pandora's Box"
 date: 2007-11-22
-tags: ["poetry", "sonnet"]
+tags: ["poetry", "sonnet", "writing"]
 description: "Teenage sorrow alluding to Greek mythology."
 ---
 

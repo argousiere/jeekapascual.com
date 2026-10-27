@@ -1,7 +1,7 @@
 ---
 title: "Sonnet VI: Cold Confinement"
 date: 2007-11-25
-tags: ["poetry", "sonnet"]
+tags: ["poetry", "sonnet", "writing"]
 description: "Imagery of a solitary person and an old cabin in a snow-covered forest"
 ---
 
