@@ -3,6 +3,10 @@ title: "The Transcontinental Year"
 date: 2015-12-19
 tags: ["expat", "france"]
 description: "Reminiscing on the administrative hoops I jumped through to get to France"
+cover:
+  src: /blog/the-transcontinental-year.jpg
+  width: 1200
+  height: 801
 ---
 
 It was 8 months ago when I sent my job application, and it took 6 months for my visa to finally get approved.

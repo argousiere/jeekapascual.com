@@ -4,8 +4,8 @@ import {
   FeaturedList,
 } from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getPosts, toEntryModel } from '../utils/posts';
-import { getFeaturedItems } from '../utils/featured-items';
+import { getPosts, toEntryModel } from '../utils/post-utils';
+import { getFeaturedItems } from '../utils/featured-utils';
 import siteConfig from '../../site.config';
 
 const posts = await getPosts();
@@ -24,5 +24,4 @@ const featuredItems = getFeaturedItems(entries);
   </section>
 
   <EntryList entryListTitle="Latest Posts" items={items} />
-  
 </BaseLayout>

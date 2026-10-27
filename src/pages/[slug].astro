@@ -5,9 +5,10 @@ import {
 } from '@argousiere/vespertina-design-system/react';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getPosts, toEntryModel } from '../utils/posts';
+import { getBlogPosts } from '../utils/blog-utils';
 
 export async function getStaticPaths() {
-  const posts = await getPosts();
+  const posts = await getBlogPosts();
 
   return posts.map((post, index) => ({
     params: { slug: post.id },

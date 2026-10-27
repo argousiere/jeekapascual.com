@@ -1,8 +1,12 @@
 ---
 title: "My First Winter"
 date: 2016-03-06
-tags: ["expat"]
+tags: ["winter", "france"]
 description: "Notes on stinging ears and icy fingers from a tropical girl."
+cover:
+  src: /blog/my-first-winter.jpg
+  width: 1200
+  height: 675
 ---
 
 The end of winter came very swiftly. The months of January and February sped by without me even relishing the events. After the short winter days and jam-packed months, I can finally breathe and reflect on what I have experienced so far. There is so much for me to write about that I don't even know where to begin.
