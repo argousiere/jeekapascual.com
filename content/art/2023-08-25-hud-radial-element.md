@@ -1,16 +1,20 @@
 ---
 title: "HUD Radial Element"
 date: 2023-08-25
-tags: ["artwork"]
+tags: ["art"]
 description: ""
-image: "/content/images/2024/01/HUD-Radial-Element.svg"
+image:
+  src: /art/hud-radial-element.svg
+  width: 2400
+  height: 2400
+thumbnail:
+  src: /art/hud-element-sketch.jpg
+  width: 640
+  height: 640
 ---
 
-![](/content/images/2024/01/HUD-Element-Sketch-1.jpg)
+![](/art/hud-element-sketch.jpg "Sketch done on iPad Procreate and Apple Pencil")
 
-![](/content/images/2024/01/HUD-Radial-Element-3.svg)
-
-Radial HUD Element Sketch, (left) and vectorized version (right)
 
 While scouring the Internet for design inspiration for my website, I came across a lot of geometric HUD (Heads-up Display) elements and thought, "I want one too!". It's been several years since I last did vector art, so one week-end, I tried my hand in designing one.
 

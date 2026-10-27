@@ -1,12 +1,13 @@
 ---
 title: "Amaryllis Flower"
 date: 2018-02-21
-tags: ["artwork", "botanical-illustration"]
+tags: ["art", "botanical-illustration"]
 description: ""
-image: "/content/images/2024/02/Amaryllis-small.jpg"
+image:
+  src: /art/amaryllis.jpg
+  width: 900
+  height: 900
 ---
-
-![](/content/images/2024/02/Amaryllis-small-1.jpg)
 
 A birthday gift for my dear mother who loves Amaryllis flowers.
 

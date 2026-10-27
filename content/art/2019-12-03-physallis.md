@@ -1,12 +1,13 @@
 ---
 title: "Physallis"
 date: 2019-12-03
-tags: ["artwork", "botanical-illustration"]
+tags: ["art", "botanical-illustration"]
 description: ""
-image: "/content/images/2024/02/Physalis_JeanellaPascual.jpg"
+image:
+  src: /art/physallis.jpg
+  width: 2548
+  height: 2911
 ---
-
-![](/content/images/2024/02/Physalis_JeanellaPascual-1.jpg)
 
 One dreary winter weekend, I followed an online workshop of ultra-talented botanical illustrator [Svetlana Lanse](https://www.instagram.com/svetlana_lanse/).
 

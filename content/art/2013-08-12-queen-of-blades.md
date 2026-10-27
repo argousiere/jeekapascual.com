@@ -1,14 +1,15 @@
 ---
 title: "Queen of Blades"
 date: 2013-08-12
-tags: ["artwork", "digital-art"]
+tags: ["art", "digital-art"]
 description: ""
-image: "/content/images/2024/02/Queen-of-Blades-lineart.jpeg"
+image:
+  src: /art/queen-of-blades.jpg
+  width: 2048
+  height: 1810
 ---
 
-![](/content/images/2024/02/Queen-of-Blades-sketch.jpeg)
-
-![](/content/images/2024/02/Queen-of-Blades-lineart-1.jpeg)
+![](/art/queen-of-blades-sketch.jpg)
 
 A tribute to Sarah Kerrigan, who will always be my favorite heroine/villain in video games.
 

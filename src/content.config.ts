@@ -34,6 +34,11 @@ const blog = defineCollection({
   schema: entry,
 });
 
+const art = defineCollection({
+  loader: entries('./content/art'),
+  schema: entry.extend({ image }),
+});
+
 const tags = defineCollection({
   loader: file('./content/tags.yml'),
   schema: z.object({
@@ -42,4 +47,4 @@ const tags = defineCollection({
   }),
 });
 
-export const collections = { blog, tags };
+export const collections = { blog, art, tags };
