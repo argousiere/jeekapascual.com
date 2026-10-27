@@ -5,6 +5,7 @@ const routes = {
   tag: { url: '/tag', viewMode: EntriesViewMode.LIST },
   art: { label: 'Art', url: '/art', viewMode: EntriesViewMode.GALLERY },
   writing: { label: 'Writing', url: '/writing', viewMode: EntriesViewMode.LIST },
+  work: { label: 'Work', url: '/work' },
   about: { label: 'About', url: '/about' },
 };
 
@@ -14,7 +15,8 @@ const siteConfig = {
   routes,
   navItems: [
     routes.art,
-    routes.writing, 
+    routes.writing,
+    routes.work,
     routes.about
   ],
   thumbnailWidth: 640,

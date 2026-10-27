@@ -1,0 +1,14 @@
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--ves-spacing-9);
+  gap: var(--ves-spacing-7);
+}
+
+.experience-section__title {
+  border-bottom: 1px solid var(--ves-border-color);
+
+  .ves-label {
+    gap: var(--ves-spacing-4);
+  }
+}

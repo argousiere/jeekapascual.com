@@ -1,0 +1,36 @@
+.timeline-item {
+  --timeline-dot-size: 9px;
+  --timeline-dot-top: calc(
+    var(--ves-spacing-3) +
+      (var(--experience-card-line-height) - var(--timeline-dot-size)) / 2
+  );
+  --timeline-line-gap: var(--ves-spacing-3);
+  --timeline-gap: var(--ves-spacing-7);
+
+  position: relative;
+  padding-left: calc(var(--timeline-dot-size) + var(--ves-spacing-6));
+}
+
+.timeline-item::before {
+  position: absolute;
+  top: var(--timeline-dot-top);
+  left: 0;
+  border-radius: 50%;
+  background: var(--ves-global-color-cerulean);
+  width: var(--timeline-dot-size);
+  height: var(--timeline-dot-size);
+  content: '';
+}
+
+.timeline-item:not(:last-child)::after {
+  position: absolute;
+  top: calc(
+    var(--timeline-dot-top) + var(--timeline-dot-size) + var(--timeline-line-gap)
+  );
+  bottom: calc(
+    var(--timeline-line-gap) - var(--timeline-gap) - var(--timeline-dot-top)
+  );
+  left: calc(var(--timeline-dot-size) / 2);
+  border-left: 1px solid var(--ves-border-color);
+  content: '';
+}

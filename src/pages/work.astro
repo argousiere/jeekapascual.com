@@ -1,0 +1,194 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import siteConfig from '../../site.config';
+import WorkCard from '../components/work/WorkCard';
+import EducationCard from '../components/work/EducationCard';
+import ResearchCard from '../components/work/ResearchCard';
+import ProjectCard from '../components/work/ProjectCard';
+import ExperienceCardLink from '../components/work/ExperienceCardLink';
+import ExperienceSection from '../components/work/ExperienceSection';
+
+const { label } = siteConfig.routes.work;
+const intro =
+  'Senior front-end engineer with 13+ years of experience building enterprise applications. I specialize in design systems, data visualization, and web accessibility.';
+---
+
+<BaseLayout title={label} description={intro}>
+  <div class="app-work">
+    <header class="app-work__header">
+      <h1 class="app-work__title">{label}</h1>
+      <p>{intro}</p>
+      <ul class="app-work__links">
+        <li><ExperienceCardLink url="https://github.com/argousiere" label="GitHub" icon="github" showExternalIcon={false} /></li>
+        <li><ExperienceCardLink url="https://linkedin.com/in/jeanellapascual" label="LinkedIn" icon="linkedin" showExternalIcon={false} /></li>
+        <li><ExperienceCardLink url="mailto:dev@jeekapascual.com" label="Email" icon="mail" showExternalIcon={false} /></li>
+      </ul>
+    </header>
+
+    <ExperienceSection id="professional-experience" title="Professional Experience" icon="work">
+      <WorkCard
+        company="Dataiku"
+        position="Senior Software Engineer"
+        startDate="2022-12-01"
+        location="Paris, France (Remote)"
+        projects={[
+          {
+            name: 'Dataiku Stories',
+            responsibilities: [
+              'Developed a theming system where users can define, customize, and import/export themes with schema validation.',
+              'Implemented datetime search filters with timezone handling.',
+              'Drove UI/UX consistency initiatives through Storybook documentation, collaboration with product managers and designers.',
+              'Increased test coverage in toolkit, UI, and backend packages.',
+              'Mentored teammates on testing, modular code, and thorough PR reviews.'
+            ],
+          },
+          {
+            name: 'AI Governance',
+            responsibilities: [
+              'Developed a configurable dashboard builder for customizing page layouts, search filters, and charts by asset type.',
+              'Implemented search filters UI that support condition groups and multiple datatypes.'
+            ],
+          },
+        ]}
+        skills={['React', 'Redux', 'Angular', 'Storybook', 'Jest', 'Playwright', 'Jenkins', 'Java']}
+      />
+      <WorkCard
+        company="Perfect Memory"
+        position="Senior Front-end Developer"
+        startDate="2015-10-01"
+        endDate="2022-06-01"
+        location="Clermont-Ferrand, France"
+        projects={[
+          {
+            responsibilities: [
+              'Developed and unit-tested 60+ components for the core UI library, and led architecture and code reviews in a team of 8 front-end developers.',
+              'Architected a timeline editor handling 100+ video tags with zooming, panning, and lazy loading.',
+              'Implemented 2 design systems in Storybook from AdobeXD specifications.',
+            ],
+          },
+        ]}
+        skills={['Angular', 'Web Components', 'Jasmine', 'HTML/CSS', 'Storybook', 'GitLab CI/CD', 'E2E Tests', 'Chromatic']}
+      />
+      <WorkCard
+        company="Migo Entertainment"
+        position="Team Lead, Front-end Developer"
+        startDate="2013-12-01"
+        endDate="2015-06-01"
+        location="Manila, Philippines"
+        projects={[
+          {
+            responsibilities: [
+              'Led a team of 9 developers building a content production system for 100+ shows and movies.',
+              'Migrated the codebase from Backbone to AngularJS, reducing lines of code by 40%.',
+              'Mentored junior developers and interviewed 15+ candidates.',
+            ],
+          },
+        ]}
+        skills={['AngularJS', 'Java', 'JavaFX', 'PostgreSQL', 'Jenkins']}
+      />
+      <WorkCard
+        company="Chuzi, Inc."
+        position="UX Designer"
+        startDate="2013-05-01"
+        endDate="2013-11-01"
+        location="Quezon City, Philippines"
+        projects={[
+          {
+            responsibilities: [
+              'Designed mobile app prototypes adhering to iOS and Android design guidelines.',
+              'Designed icons.',
+            ],
+          },
+        ]}
+        skills={['Photoshop', 'Illustrator', 'Icon Design', 'JavaScript', 'CSS']}
+      />
+      <WorkCard
+        company="icannhas Inc."
+        position="Game Artist"
+        startDate="2011-01-01"
+        endDate="2011-07-01"
+        location="Quezon City, Philippines"
+        projects={[
+          {
+            responsibilities: [
+              'Animated characters and cutscenes in Flash.',
+              'Illustrated character art, backgrounds, icon sets, and user interface elements for web-based and mobile games.',
+            ],
+          },
+        ]}
+        skills={['Photoshop', 'Illustrator', 'Flash Animation', 'Digital Illustration']}
+      />
+    </ExperienceSection>
+
+    <ExperienceSection id="work-education" title="Education" icon="education">
+      <EducationCard
+        institution="Georgia Institute of Technology"
+        degree="M.S. Computer Science"
+        startDate="2024-08-01"
+        location="Atlanta, Georgia, USA (online)"
+        coursework={[
+          'Software Analysis',
+          'Game AI',
+          'Computer Graphics',
+          'Video Game Design',
+          'Computer Graphics in the AI Era',
+          'Accessibility Research Group (Special Topics)'
+        ]}
+        skills={['C#', 'WebGL', 'Java', 'React', 'Typescript', 'LLVM', 'Miro SDK', 'Cloudflare']}
+      />
+      <EducationCard
+        institution="University of Strasbourg"
+        degree="M.A. Technical Communication & Localization"
+        startDate="2022-01-01"
+        endDate="2023-11-01"
+        location="Strasbourg, France"
+        coursework={['Mobile App Localization', 'Web Development', 'Project Management', 'Usability & UX Design']}
+        skills={['Android', 'Javascript', 'Adobe Illustrator', 'Adobe InDesign']}
+      />
+      <EducationCard
+        institution="University of the Philippines - Diliman"
+        degree="B.S. Computer Science"
+        startDate="2008-06-01"
+        endDate="2013-11-01"
+        location="Quezon City, Philippines"
+        coursework={['Data Structures & Algorithms', 'Operating Systems', 'Databases', 'Networks', 'Discrete Math', 'Statistics']}
+        skills={['C', 'Java', 'Android']}
+      />
+    </ExperienceSection>
+
+    <ExperienceSection id="work-research" title="Research & Publications" icon="publication">
+      <ResearchCard
+        title="Accessible Whiteboarding"
+        institution="Georgia Tech TILES Lab"
+        startDate="2026-01-14"
+        endDate="2026-07-31"
+        links={[{ label: 'GitHub', url: 'https://github.com/tiles-lab/accessible-whiteboarding/wiki' }]}
+      />
+
+      <ResearchCard
+        title="Architecting Design Systems for Web Accessibility"
+        institution="Master's thesis, University of Strasbourg"
+        endDate="2023-11-01"
+        links={[{ label: 'Read on LinkedIn', url: 'https://www.linkedin.com/in/jeanellapascual/overlay/Education/774312689/treasury/?profileId=ACoAABCSBaIBntdgH_GEJJVX3M0MJ4UT67x5Z5o' }]}
+      />
+
+      <ResearchCard
+        title="The Road to a More Accessible Web: Bridging the Inequality Gap with AI"
+        institution="Graduate Inequality Review vol. 2"
+        endDate="2023-07-14"
+        links={[{ label: 'Journal', url: 'https://www.graduateinequalityreview.com/volume-ii.html' }]}
+      />
+    </ExperienceSection>
+
+    <ExperienceSection id="work-projects" title="Projects" icon="project">
+      <ProjectCard
+        name="Vespertina Design System"
+        description="The design system behind this website, from Figma designs to React components."
+        links={[
+          { label: 'Storybook', url: 'https://argousiere.github.io/vespertina-ui-react' },
+          { label: 'Figma', url: 'https://www.figma.com/design/jiNUbgAPy50E6CpPQEvW16/Vespertine-Cadet?node-id=377-24&t=GjcURnCKMKcftSI5-1' },
+        ]}
+      />
+    </ExperienceSection>
+  </div>
+</BaseLayout>

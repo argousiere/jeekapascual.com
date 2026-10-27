@@ -1,0 +1,17 @@
+.technology-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ves-spacing-3);
+}
+
+.technology-chip {
+  border: 1px solid var(--ves-global-color-cydonia);
+  border-radius: 999px;
+  background: oklch(from var(--ves-global-color-cydonia) l c h / 0.1);
+  padding: 0 var(--ves-spacing-4);
+  height: 22px;
+  color: var(--ves-global-color-light);
+  font-size: var(--ves-font-size-2xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
