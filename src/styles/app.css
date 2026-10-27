@@ -49,7 +49,7 @@ body {
 .app__main .ves-entries-view {
   width: 100%;
   max-width: 720px;
-  margin: calc(var(--ves-grid-size) * 2) auto 0;
+  margin: calc(var(--ves-grid-gutter) * 2) auto 0;
 }
 
 .app__not-found {
@@ -65,4 +65,14 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .app__main {
+    padding: 0 var(--ves-spacing-4);
+  }
+
+  .app__hero {
+    max-width: 100%;
+  }
 }

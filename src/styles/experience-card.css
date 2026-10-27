@@ -142,3 +142,14 @@
 .app-date-range-label__separator {
   opacity: 0.7;
 }
+
+@media (max-width: 600px) {
+  .experience-card__header {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card__meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
