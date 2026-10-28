@@ -6,7 +6,7 @@ import EducationCard from '../components/work/EducationCard';
 import ResearchCard from '../components/work/ResearchCard';
 import ProjectCard from '../components/work/ProjectCard';
 import ExperienceCardLink from '../components/work/ExperienceCardLink';
-import ExperienceSection from '../components/work/ExperienceSection';
+import ExperienceSection, { ExperienceViewMode } from '../components/work/ExperienceSection';
 
 const { label } = siteConfig.routes.work;
 const intro =
@@ -25,7 +25,7 @@ const intro =
       </ul>
     </header>
 
-    <ExperienceSection id="professional-experience" title="Professional Experience" icon="work">
+    <ExperienceSection id="professional-experience" title="Professional Experience" icon="work" viewMode={ExperienceViewMode.TIMELINE}>
       <WorkCard
         company="Dataiku"
         position="Senior Software Engineer"
@@ -121,7 +121,7 @@ const intro =
       />
     </ExperienceSection>
 
-    <ExperienceSection id="work-education" title="Education" icon="education" theme="education">
+    <ExperienceSection id="work-education" title="Education" icon="education" theme="education" viewMode={ExperienceViewMode.TIMELINE}>
       <EducationCard
         institution="Georgia Institute of Technology"
         degree="M.S. Computer Science"
@@ -158,7 +158,7 @@ const intro =
       />
     </ExperienceSection>
 
-    <ExperienceSection id="work-research" title="Research & Publications" icon="publication" theme="research">
+    <ExperienceSection id="work-research" title="Research & Publications" icon="publication" theme="research" viewMode={ExperienceViewMode.TIMELINE}>
       <ResearchCard
         title="Accessible Whiteboarding"
         institution="Georgia Tech TILES Lab"
@@ -188,7 +188,7 @@ const intro =
       </ResearchCard>
     </ExperienceSection>
 
-    <ExperienceSection id="work-projects" title="Projects" icon="project" theme="projects">
+    <ExperienceSection client:load id="work-projects" title="Projects" icon="project" theme="projects">
       <ProjectCard
         name="Vespertina Design System"
         description="My personal design system powering this site. Designed from scratch in Figma and implemented in React."
@@ -197,6 +197,7 @@ const intro =
           { label: 'Figma', url: 'https://www.figma.com/design/jiNUbgAPy50E6CpPQEvW16/Vespertine-Cadet?node-id=377-24&t=GjcURnCKMKcftSI5-1' },
         ]}
         skills={['React', 'Storybook', 'Figma', 'CSS Variables', 'Vite', 'NPM Publishing']}
+        cover={{ src: '/projects/vespertina-design-system-banner.png' }}
       />
 
        <ProjectCard
