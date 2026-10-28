@@ -5,10 +5,11 @@
       (var(--experience-card-line-height) - var(--timeline-dot-size)) / 2
   );
   --timeline-line-gap: var(--ves-spacing-3);
-  --timeline-gap: var(--ves-spacing-7);
+  --timeline-gap: var(--experience-section-gap, var(--ves-spacing-7));
+  --timeline-item-left-offset: var(--ves-spacing-6);
 
   position: relative;
-  padding-left: calc(var(--timeline-dot-size) + var(--ves-spacing-6));
+  padding-left: calc(var(--timeline-dot-size) + var(--timeline-item-left-offset));
 }
 
 .timeline-item::before {
@@ -33,4 +34,10 @@
   left: calc(var(--timeline-dot-size) / 2);
   border-left: 1px solid var(--ves-border-color);
   content: '';
+}
+
+@media (max-width: 600px) {
+  .timeline-item {
+    --timeline-item-left-offset: var(--ves-spacing-4);
+  }
 }

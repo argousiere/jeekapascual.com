@@ -10,7 +10,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@argousiere/vespertina-design-system": "^0.3.0",
+    "@argousiere/vespertina-design-system": "^0.4.0",
     "@astrojs/react": "^7.0.1",
     "astro": "^7.3.8",
     "react": "^19.2.0",

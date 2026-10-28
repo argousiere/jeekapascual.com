@@ -12,3 +12,9 @@
   width: 100%;
   margin: var(--ves-spacing-9) auto 0;
 }
+
+@media (max-width: 600px) {
+  .ves-entry {
+    padding: var(--ves-spacing-3);
+  }
+}
