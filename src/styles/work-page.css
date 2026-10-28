@@ -11,7 +11,9 @@
 .app-work__header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--ves-spacing-4);
+  text-align: center;
 }
 
 .app-work__links {
