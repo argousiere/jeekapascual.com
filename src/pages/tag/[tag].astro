@@ -21,6 +21,9 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 const tagModel = parseTagModel(getTag(tag));
 const items = posts.map((post) => ({ entry: parseEntryModel(post) }));
+
+const route = Object.values(siteConfig.routes).find(({ url }) => url === `/tag/${tag}`);
+const viewMode = route && 'viewMode' in route ? route.viewMode : siteConfig.routes.tag.viewMode;
 ---
 
 <BaseLayout
@@ -33,7 +36,7 @@ const items = posts.map((post) => ({ entry: parseEntryModel(post) }));
       client:load
       entryListTitle="Entries"
       items={items}
-      viewMode={siteConfig.routes.tag.viewMode}
+      viewMode={viewMode}
     />
   </div>
 </BaseLayout>
