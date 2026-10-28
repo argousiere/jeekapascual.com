@@ -21,16 +21,16 @@ const entry = z.object({
   thumbnail: image.optional(),
 });
 
-const entries = (base: string) =>
+const entries = (base: string, pattern: string | string[] = '**/*.md') =>
   glob({
-    pattern: '**/*.md',
+    pattern,
     base,
     generateId: ({ entry }) =>
-      entry.replace(/\.md$/, '').replace(DATE_PREFIX, ''),
+      entry.replace(/^.*\//, '').replace(/\.md$/, '').replace(DATE_PREFIX, ''),
   });
 
 const blog = defineCollection({
-  loader: entries('./content/blog'),
+  loader: entries('./content', ['blog/**/*.md', 'projects/**/*.md']),
   schema: entry,
 });
 

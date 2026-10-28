@@ -136,7 +136,7 @@ const intro =
           'Computer Graphics in the AI Era',
           'Accessibility Research Group (Special Topics)'
         ]}
-        skills={['C#', 'WebGL', 'Java', 'React', 'Typescript', 'LLVM', 'Miro SDK', 'Cloudflare']}
+        skills={['Unity', 'WebGL', 'Java', 'React', 'Typescript', 'LLVM', 'Python']}
       />
       <EducationCard
         institution="University of Strasbourg"
@@ -160,7 +160,7 @@ const intro =
 
     <ExperienceSection id="work-research" title="Research & Publications" icon="publication" theme="research" viewMode={ExperienceViewMode.TIMELINE}>
       <ResearchCard
-        title="Accessible Whiteboarding"
+        title="Accessible Concept Mapping in Miro"
         institution="Georgia Tech TILES Lab"
         startDate="2026-01-14"
         endDate="2026-07-31"
@@ -197,7 +197,50 @@ const intro =
           { label: 'Figma', url: 'https://www.figma.com/design/jiNUbgAPy50E6CpPQEvW16/Vespertine-Cadet?node-id=377-24&t=GjcURnCKMKcftSI5-1' },
         ]}
         skills={['React', 'Storybook', 'Figma', 'CSS Variables', 'Vite', 'NPM Publishing']}
-        cover={{ src: '/projects/vespertina-design-system-banner.png' }}
+        cover={{ 
+          src: '/projects/vespertina-design-system-banner.png',
+          alt: 'Vespertina Design System Banner'
+        }}
+      />
+
+      <ProjectCard
+        name="Accessible Concept Mapping in Miro"
+        description="Research and development of a Miro plugin to help BLV users navigate concept maps. In collaboration with the Georgia Tech TILES Lab."
+        links={[
+          { label: 'GitHub', url: 'https://github.com/tiles-lab/accessible-whiteboarding/wiki' },
+          { label: 'Blog', url: '/cs8903-a11y-research' },
+        ]}
+        skills={['WCAG', 'React', 'Miro SDK', 'Cloudflare']}
+        cover={{
+          src: '/projects/cs8903-a11y-research-group-cover.png',
+          alt: 'Accessible Concept Mapping in Miro cover'
+        }}
+      />
+
+      <ProjectCard
+        name="Isle of the Lantern Keeper"
+        description="Group project for CS8803 Computer Graphics in the AI Era. Georgia Tech OMSCS."
+        links={[
+          { label: 'Blog', url: '/cs8803-cgai' },
+        ]}
+        skills={['WebGL', 'Raytracing', 'SDF', 'Volumetric Rendering', 'Physics Simulation']}
+        cover={{
+          src: '/projects/cs8803-cgai/cs8803-cgai-cover.jpg',
+          alt: 'CS8803 Computer Graphics in the AI Era cover'
+        }}
+      />
+
+      <ProjectCard
+        name="Aegis Video Game"
+        description="Roguelite third-person shooter in a space outpost. Group project for CS457 Video Game Design. Georgia Tech OMSCS."
+        links={[
+          { label: 'Blog', url: '/aegis-video-game' },
+        ]}
+        skills={['Unity', 'Blender', 'Figma']}
+        cover={{
+          src: '/projects/aegis-video-game/aegis-banner.jpg',
+          alt: 'Aegis Video Game Banner'
+        }}
       />
 
        <ProjectCard
@@ -206,7 +249,7 @@ const intro =
         links={[
           { label: 'GitHub', url: 'https://github.com/argousiere/jeekapascual.com' },
         ]}
-        skills={['AstroJS', 'React', 'Vite', 'GitHub Actions', 'Cloudinary']}
+        skills={['Astro.JS', 'React', 'Vite', 'GitHub Actions', 'Cloudinary']}
       />
     </ExperienceSection>
   </div>

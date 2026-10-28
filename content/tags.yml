@@ -1,3 +1,5 @@
+a11y:
+  label: 'a11y'
 adulthood:
   label: Adulthood
 art:
@@ -24,6 +26,9 @@ nature:
   label: Nature
 nostalgia:
   label: Nostalgia
+omscs:
+  label: OMSCS
+  description: Sleepless nights and caffeinated days taking Georgia Tech's Online M.S. in Computer Science
 paris:
   label: Paris
 poetry:
@@ -36,6 +41,8 @@ reflection:
   label: Reflection
 sonnet:
   label: Sonnet
+video-game:
+  label: Video Game
 watercolors:
   label: Watercolors
 winter:
