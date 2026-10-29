@@ -1,4 +1,5 @@
 import { Label } from '@argousiere/vespertina-design-system/react';
+import ExperienceCardCover, { type ExperienceCardCoverProps } from './ExperienceCardCover';
 import DateRangeLabel, { type DateRangeLabelProps } from './DateRangeLabel';
 
 export type ExperienceCardProps = Pick<DateRangeLabelProps, 'startDate' | 'endDate'> & {
@@ -7,6 +8,7 @@ export type ExperienceCardProps = Pick<DateRangeLabelProps, 'startDate' | 'endDa
   startDate?: string;
   endDate?: string;
   location?: string;
+  cover?: ExperienceCardCoverProps;
   body?: React.ReactNode;
   footer?: React.ReactNode;
 }
@@ -17,31 +19,38 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   startDate,
   endDate,
   location,
+  cover,
   body,
   footer,
-}) => (
-  <article className="timeline-item">
-    <div className="experience-card">
-      <header className="experience-card__header">
-        <div className="experience-card__heading">
-          <h3 className="experience-card__title">{title}</h3>
-          {subtitle && <h4 className="experience-card__subtitle">{subtitle}</h4>}
-        </div>
+}) => {
+  const showMeta = location || startDate || endDate;
 
-        <div className="experience-card__meta">
-          <DateRangeLabel startDate={startDate} endDate={endDate} />
+  return (
+    <article className="timeline-item">
+      <div className="experience-card">
+        <header className="experience-card__header">
+          <div className="experience-card__heading">
+            <h3 className="experience-card__title">{title}</h3>
+            {subtitle && <h4 className="experience-card__subtitle">{subtitle}</h4>}
+          </div>
 
-          {location && (
-            <Label className="experience-card__location" icon="location" text={location} />
-          )}
-        </div>
-      </header>
+          {showMeta && <div className="experience-card__meta">
+            <DateRangeLabel startDate={startDate} endDate={endDate} />
 
-      {body && <div className="experience-card__body">{body}</div>}
+            {location && (
+              <Label className="experience-card__location" icon="location" text={location} />
+            )}
+          </div>}
+        </header>
 
-      {footer && <footer className="experience-card__footer">{footer}</footer>}
-    </div>
-  </article>
-);
+        {cover && <ExperienceCardCover {...cover} />}
+
+        {body && <div className="experience-card__body">{body}</div>}
+
+        {footer && <footer className="experience-card__footer">{footer}</footer>}
+      </div>
+    </article>
+  );
+};
 
 export default ExperienceCard;

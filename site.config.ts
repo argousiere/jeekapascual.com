@@ -6,6 +6,7 @@ const routes = {
   art: { label: 'Art', url: '/art', viewMode: EntriesViewMode.GALLERY },
   writing: { label: 'Writing', url: '/writing', viewMode: EntriesViewMode.LIST },
   work: { label: 'Work', url: '/work' },
+  omscs: { label: 'OMSCS', url: '/tag/omscs', viewMode: EntriesViewMode.GALLERY },
   about: { label: 'About', url: '/about' },
 };
 
@@ -17,6 +18,7 @@ const siteConfig = {
     routes.art,
     routes.writing,
     routes.work,
+    routes.omscs,
     routes.about
   ],
   thumbnailWidth: 640,

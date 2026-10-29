@@ -11,22 +11,31 @@
 
 .experience-card__header {
   display: grid;
-  grid-template-columns: 1fr 35%;
+  grid-template-columns: 1fr 40%;
   column-gap: var(--ves-spacing-5);
   padding: var(--ves-spacing-3) var(--ves-spacing-5);
   background-color: color-mix(in srgb, var(--ves-border-color) 20%, transparent);
   line-height: var(--experience-card-line-height);
 
+  + .experience-card__cover,
   + .experience-card__body,
   + .experience-card__footer {
     border-top: 1px solid var(--ves-divider-color);
   }
 }
 
+.experience-card__cover {
+  border-bottom: 1px solid var(--ves-divider-color);
+}
+
 .experience-card__heading,
 .experience-card__meta {
   display: flex;
   flex-direction: column;
+}
+
+.experience-card__heading:only-child {
+  grid-column: 1 / -1;
 }
 
 .experience-card__meta {
