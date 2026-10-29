@@ -5,6 +5,7 @@ import WorkCard from '../components/work/WorkCard';
 import EducationCard from '../components/work/EducationCard';
 import ResearchCard from '../components/work/ResearchCard';
 import ProjectCard from '../components/work/ProjectCard';
+import Link from '../components/Link';
 import ExperienceCardLink from '../components/work/ExperienceCardLink';
 import ExperienceSection, { ExperienceViewMode } from '../components/work/ExperienceSection';
 
@@ -173,9 +174,9 @@ const intro =
         title="A Comparative Study of Web Accessibility Guidelines in Design Systems"
         institution="University of Strasbourg · Master's thesis"
         endDate="2023-11-01"
-        links={[{ label: 'Thesis', url: 'https://www.linkedin.com/in/jeanellapascual/overlay/Education/774312689/treasury/?profileId=ACoAABCSBaIBntdgH_GEJJVX3M0MJ4UT67x5Z5o' }]}
+        links={[{ label: 'Thesis (PDF)', pdf: 'masters-tcloc-thesis' }]}
       >
-        <p>Comparative study of 5 design systems from the <a class="experience-card__link" href="https://open-ui.org/">Open UI</a> catalog and how they integrate web accessibility guidelines. Each is analyzed on the 4 components of information architecture and on the quality of its alignment with WCAG. The findings offer software teams practical guidance for building accessibility into their design systems.</p>
+        <p>Comparative study of 5 design systems from the <Link className="experience-card__link" href="https://open-ui.org/">Open UI</Link> catalog and how they integrate web accessibility guidelines. Each is analyzed on the 4 components of information architecture and on the quality of its alignment with WCAG. The findings offer software teams practical guidance for building accessibility into their design systems.</p>
       </ResearchCard>
 
       <ResearchCard

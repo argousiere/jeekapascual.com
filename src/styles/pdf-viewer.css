@@ -1,0 +1,55 @@
+.app-pdf-viewer {
+  border: 1px solid var(--ves-global-color-kyanite);
+  background: var(--ves-global-color-midnight);
+  padding: 0;
+  width: min(960px, 100vw - 2 * var(--ves-spacing-5));
+  height: calc(100dvh - 2 * var(--ves-spacing-7));
+  max-width: none;
+  max-height: none;
+  color: var(--ves-global-color-light);
+
+  &[open] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &::backdrop {
+    background: oklch(from var(--ves-global-color-midnight) l c h / 0.8);
+  }
+}
+
+.app-pdf-viewer__header {
+  display: flex;
+  align-items: center;
+  gap: var(--ves-spacing-5);
+  border-bottom: 1px solid var(--ves-global-color-kyanite);
+  padding: var(--ves-spacing-3) var(--ves-spacing-5);
+}
+
+.app-pdf-viewer__title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-size: var(--ves-font-size-sm);
+  text-overflow: ellipsis;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.app-pdf-viewer__link {
+  color: var(--ves-global-color-cerulean);
+  font-size: var(--ves-font-size-xs);
+  white-space: nowrap;
+}
+
+.app-pdf-viewer__frame {
+  flex: 1;
+  border: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .app-pdf-viewer {
+    height: calc(100dvh - 2 * var(--ves-spacing-5));
+  }
+}

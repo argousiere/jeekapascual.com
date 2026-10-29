@@ -9,8 +9,8 @@ const ExperienceCardLinks: React.FC<ExperienceCardLinksProps> = ({ links }) => (
   <section className="experience-card__group">
     <h4 className="experience-card__group-title">Links</h4>
     <ExperienceCardTopics>
-      {links.map(({ url, label }) => (
-        <ExperienceCardLink key={url} url={url} label={label} />
+      {links.map((link) => (
+        <ExperienceCardLink key={link.label} {...link} />
       ))}
     </ExperienceCardTopics>
   </section>

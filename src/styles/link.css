@@ -1,0 +1,19 @@
+.app-link {
+  border-block-end: 1px solid transparent;
+
+  &:hover {
+    border-block-end-color: currentColor;
+  }
+
+  &:focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+.app-link__icon {
+  --ves-icon-size: 1em;
+
+  margin-inline-start: var(--ves-spacing-2);
+  vertical-align: -0.125em;
+}

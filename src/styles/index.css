@@ -1,4 +1,5 @@
 @import './app.css';
+@import './link.css';
 @import './footer.css';
 @import './entry-page.css';
 @import './tag-page.css';
@@ -7,3 +8,4 @@
 @import './experience-card.css';
 @import './skills.css';
 @import './timeline.css';
+@import './pdf-viewer.css';

@@ -1,25 +1,30 @@
-import { Icon, Label, type IconName } from '@argousiere/vespertina-design-system/react';
+import { Label, type IconName } from '@argousiere/vespertina-design-system/react';
+import Link from '../Link';
+import PdfViewer from '../PdfViewer';
 
-export interface ExperienceCardLinkProps {
-  url: string;
+export type ExperienceCardLinkProps = {
   label: string;
   icon?: IconName;
   showExternalIcon?: boolean;
-}
+} & ({ url: string; pdf?: never } | { pdf: string; url?: never });
 
-const ExperienceCardLink: React.FC<ExperienceCardLinkProps> = ({ url, label, icon, showExternalIcon = true }) => {
-  const isExternal = showExternalIcon && /^https?:\/\//.test(url);
+const ExperienceCardLink: React.FC<ExperienceCardLinkProps> = ({ url, pdf, label, icon, showExternalIcon = true }) => {
+  if (pdf !== undefined) {
+    return (
+      <PdfViewer className="experience-card__action" src={`/files/${pdf}.pdf`} title={label}>
+        <Label icon={icon} text={label} />
+      </PdfViewer>
+    );
+  }
 
   return (
-    <a
+    <Link
       className="experience-card__link"
       href={url}
-      target={isExternal ? '_blank' : undefined}
-      rel={isExternal ? 'noopener noreferrer' : undefined}
-    >
-      <Label icon={icon} text={label} />
-      {isExternal && <Icon className="experience-card__link-icon" name="external-link" />}
-    </a>
+      label={label}
+      icon={icon}
+      showExternalIcon={showExternalIcon}
+    />
   );
 };
 

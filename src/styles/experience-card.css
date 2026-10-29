@@ -120,13 +120,17 @@
   content: '·';
 }
 
-.experience-card__link {
-  display: inline;
-  color: var(--experience-accent-color);
-  font-weight: var(--ves-font-weight-light);
+.experience-card__action {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  border-block-end: 1px solid transparent;
+  line-height: 1;
 
   &:hover {
-    border-block-end: 1px solid currentColor;
+    border-block-end-color: currentColor;
   }
 
   &:focus-visible {
@@ -135,11 +139,11 @@
   }
 }
 
-.experience-card__link-icon {
-  --ves-icon-size: 1em;
-
-  margin-inline-start: var(--ves-spacing-2);
-  vertical-align: -0.125em;
+.experience-card__link,
+.experience-card__action {
+  display: inline;
+  color: var(--experience-accent-color);
+  font-weight: var(--ves-font-weight-light);
 }
 
 .app-date-range-label {
