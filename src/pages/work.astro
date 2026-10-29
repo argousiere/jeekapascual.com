@@ -11,7 +11,7 @@ import ExperienceSection, { ExperienceViewMode } from '../components/work/Experi
 
 const { label } = siteConfig.routes.work;
 const intro =
-  'Senior front-end engineer with 13+ years of experience building enterprise applications. I specialize in design systems, data visualization, and web accessibility. Studying Georgia Tech OMSCS part-time, taking the Graphics specialization.';
+  'Senior front-end engineer with 13+ years of experience building enterprise applications. I specialize in design systems, web accessibility (WCAG), technical writing, and testing. Studying Georgia Tech OMSCS part-time, taking the Graphics specialization.';
 ---
 
 <BaseLayout title={label} description={intro}>
@@ -23,6 +23,7 @@ const intro =
         <li><ExperienceCardLink url="https://github.com/argousiere" label="GitHub" icon="github" showExternalIcon={false} /></li>
         <li><ExperienceCardLink url="https://linkedin.com/in/jeanellapascual" label="LinkedIn" icon="linkedin" showExternalIcon={false} /></li>
         <li><ExperienceCardLink url="mailto:dev@jeekapascual.com" label="Email" icon="mail" showExternalIcon={false} /></li>
+        <li><ExperienceCardLink pdf="cv-2026-jeanella-pascual" label="CV" icon="publication" /></li>
       </ul>
     </header>
 
@@ -37,22 +38,25 @@ const intro =
           {
             name: 'Dataiku Stories',
             responsibilities: [
-              'Developed a theming system where users can define, customize, and import/export themes with schema validation.',
-              'Implemented datetime search filters with timezone handling.',
-              'Drove UI/UX consistency initiatives through Storybook documentation, collaboration with product managers and designers.',
-              'Increased test coverage in toolkit, UI, and backend packages.',
-              'Mentored teammates on testing, modular code, and thorough PR reviews.'
+              'Apprenticeship mentor on the topic of slide transitions and animations.',
+              'Developed a web app that allows users to create data-driven slide decks with dynamic charts.',
+              'Migrated the backend from Node.js to Java.',
+              'Developed a theming system where users can define, customize, and import/export themes with schema validation for their slide decks.',
+              'Maintained 20 charts and integrated datetime search filters with timezone handling.',
+              'Drove UI/UX consistency initiatives through Storybook documentation, in collaboration with product managers and designers.',
+              'Increased test coverage in toolkit, UI, and backend packages and mentored teammates on testing, modular code, and thorough PR reviews.'
             ],
           },
           {
             name: 'AI Governance',
             responsibilities: [
-              'Developed a configurable dashboard builder for customizing page layouts, search filters, and charts by asset type.',
-              'Implemented search filters UI that support condition groups and multiple datatypes.'
+              'Developed a configurable dashboard builder for customizing page layouts, search filters, and charts by AI Project type.',
+              'Developed a Kanban board to view AI Projects\' governance workflow status.',
+              'Implemented search filters UI that supports condition groups and multiple datatypes.'
             ],
           },
         ]}
-        skills={['React', 'Redux', 'Angular', 'Storybook', 'Jest', 'Playwright', 'Jenkins', 'Java']}
+        skills={['TypeScript', 'React', 'Redux', 'Angular', 'Storybook', 'Jest', 'Playwright', 'Selenium', 'Jenkins', 'NestJS', 'Java']}
       />
       <WorkCard
         company="Perfect Memory"
@@ -64,8 +68,10 @@ const intro =
           {
             responsibilities: [
               'Developed and unit-tested 60+ components for the core UI library, and led architecture and code reviews in a team of 8 front-end developers.',
-              'Architected a timeline editor handling 100+ video tags with zooming, panning, and lazy loading.',
+              'Architected and developed a timeline editor handling 100+ video tags with zooming, panning, and lazy loading.',
+              'Developed the Platform Manager UI where system administrators can install, deploy and configure plugins in their Perfect Memory environments.',
               'Implemented 2 design systems in Storybook from AdobeXD specifications.',
+              'Implemented a Layout Templating API in Angular for clients to customize asset page layouts and widgets in zones or islands.'
             ],
           },
         ]}
@@ -171,7 +177,7 @@ const intro =
       </ResearchCard>
 
       <ResearchCard
-        title="A Comparative Study of Web Accessibility Guidelines in Design Systems"
+        title="Architecting Design Systems for Web Accessibility"
         institution="University of Strasbourg · Master's thesis"
         endDate="2023-11-01"
         links={[{ label: 'Thesis (PDF)', pdf: 'masters-tcloc-thesis' }]}
@@ -181,7 +187,7 @@ const intro =
 
       <ResearchCard
         title="The Road to a More Accessible Web: Bridging the Inequality Gap with AI"
-        institution="Graduate Inequality Review, Vol. II"
+        institution="Graduate Inequality Review (University of Oxford), Vol. II"
         endDate="2023-07-14"
         links={[{ label: 'Article', url: 'https://www.graduateinequalityreview.com/volume-ii.html' }]}
       >

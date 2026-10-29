@@ -18,10 +18,15 @@
 
 .app-work__links {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: var(--ves-spacing-5);
 
   .ves-label__icon {
     --ves-icon-size: 1em;
+  }
+
+  .experience-card__action {
+    line-height: 1.5;
   }
 }
